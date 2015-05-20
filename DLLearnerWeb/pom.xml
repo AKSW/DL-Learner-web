@@ -36,6 +36,15 @@
 		</repository>
 	</repositories>
 
+  
+	<dependencies>
+		<dependency>
+			<groupId>org.dllearner</groupId>
+			<artifactId>interfaces</artifactId>
+			<version>1.0</version>
+		</dependency>
+	</dependencies>
+
 
 	<!-- Added, because maven couldnt find the web.xml -->
 	<build>

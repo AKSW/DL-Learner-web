@@ -1,5 +1,8 @@
 *.pydevproject
 .metadata
+.metadata/
+/.metadata/
+\.metadata\
 .gradle
 bin/
 tmp/
@@ -37,6 +40,4 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
-
-# classes
-*.class
+*.war

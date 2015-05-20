@@ -663,3 +663,526 @@ Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angeg
 2015-05-20 14:00:29,049 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
 2015-05-20 14:00:29,051 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-05-20 14:00:29,051 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 14:29:45,068 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-20 14:29:47,387 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 14:29:47,388 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 14:29:47,392 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 14:29:47,393 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:56:33,593 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Repo\DL-Learner-web\DLLearnerWeb\pom.xml.
+2015-05-20 15:56:33,875 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/dllearner/interfaces/1.0/interfaces-1.0.pom
+2015-05-20 15:56:34,158 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/dllearner/interfaces/1.0/interfaces-1.0.pom
+2015-05-20 15:56:34,207 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/dllearner/dllearner-parent/1.0/dllearner-parent-1.0.pom
+2015-05-20 15:56:34,435 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/dllearner/dllearner-parent/1.0/dllearner-parent-1.0.pom
+2015-05-20 15:56:34,515 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/dllearner/components-core/1.0/components-core-1.0.pom
+2015-05-20 15:56:34,754 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/dllearner/components-core/1.0/components-core-1.0.pom
+2015-05-20 15:56:35,007 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava/17.0/guava-17.0.pom
+2015-05-20 15:56:35,220 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava-parent/17.0/guava-parent-17.0.pom
+2015-05-20 15:56:35,541 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.pom
+2015-05-20 15:56:35,767 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom
+2015-05-20 15:56:35,973 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.pom
+2015-05-20 15:56:36,108 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.pom
+2015-05-20 15:56:37,370 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.pom
+2015-05-20 15:56:37,491 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.pom
+2015-05-20 15:56:37,592 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.pom
+2015-05-20 15:56:37,693 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-parent/9/jena-parent-9.pom
+2015-05-20 15:56:37,792 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-parent/9/jena-parent-9.pom
+2015-05-20 15:56:38,306 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-parent/9/jena-parent-9.pom
+2015-05-20 15:56:38,343 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-parent/9/jena-parent-9.pom
+2015-05-20 15:56:38,451 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-parent/9/jena-parent-9.pom
+2015-05-20 15:56:38,560 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.pom
+2015-05-20 15:56:38,671 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.pom
+2015-05-20 15:56:39,186 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.pom
+2015-05-20 15:56:39,226 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.pom
+2015-05-20 15:56:39,312 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.pom
+2015-05-20 15:56:39,431 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom
+2015-05-20 15:56:39,547 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom
+2015-05-20 15:56:40,060 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom
+2015-05-20 15:56:40,100 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom
+2015-05-20 15:56:40,166 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.pom
+2015-05-20 15:56:40,277 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-parent/1.7.6/slf4j-parent-1.7.6.pom
+2015-05-20 15:56:40,381 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-parent/1.7.6/slf4j-parent-1.7.6.pom
+2015-05-20 15:56:40,936 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.6/slf4j-parent-1.7.6.pom
+2015-05-20 15:56:40,974 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.6/slf4j-parent-1.7.6.pom
+2015-05-20 15:56:41,065 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.6/slf4j-parent-1.7.6.pom
+2015-05-20 15:56:41,191 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-iri/1.0.2/jena-iri-1.0.2.pom
+2015-05-20 15:56:41,290 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-iri/1.0.2/jena-iri-1.0.2.pom
+2015-05-20 15:56:41,803 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-iri/1.0.2/jena-iri-1.0.2.pom
+2015-05-20 15:56:41,840 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-iri/1.0.2/jena-iri-1.0.2.pom
+2015-05-20 15:56:41,914 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-iri/1.0.2/jena-iri-1.0.2.pom
+2015-05-20 15:56:42,032 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.pom
+2015-05-20 15:56:42,146 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.pom
+2015-05-20 15:56:42,641 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.pom
+2015-05-20 15:56:42,678 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.pom
+2015-05-20 15:56:42,774 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.pom
+2015-05-20 15:56:43,026 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/log4j/log4j/1.2.17/log4j-1.2.17.pom
+2015-05-20 15:56:43,302 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java/0.4/jsonld-java-0.4.pom
+2015-05-20 15:56:43,505 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java-parent/0.4/jsonld-java-parent-0.4.pom
+2015-05-20 15:56:43,596 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.pom
+2015-05-20 15:56:43,698 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.pom
+2015-05-20 15:56:44,213 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.pom
+2015-05-20 15:56:44,248 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.pom
+2015-05-20 15:56:44,345 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.pom
+2015-05-20 15:56:44,462 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-distribution/4.0.0/owlapi-distribution-4.0.0.pom
+2015-05-20 15:56:44,563 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-distribution/4.0.0/owlapi-distribution-4.0.0.pom
+2015-05-20 15:56:45,071 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-distribution/4.0.0/owlapi-distribution-4.0.0.pom
+2015-05-20 15:56:45,209 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-distribution/4.0.0/owlapi-distribution-4.0.0.pom
+2015-05-20 15:56:45,420 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-distribution/4.0.0/owlapi-distribution-4.0.0.pom
+2015-05-20 15:56:45,526 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-parent/4.0.0/owlapi-parent-4.0.0.pom
+2015-05-20 15:56:45,647 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-parent/4.0.0/owlapi-parent-4.0.0.pom
+2015-05-20 15:56:46,163 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-parent/4.0.0/owlapi-parent-4.0.0.pom
+2015-05-20 15:56:46,203 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parent/4.0.0/owlapi-parent-4.0.0.pom
+2015-05-20 15:56:46,536 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parent/4.0.0/owlapi-parent-4.0.0.pom
+2015-05-20 15:56:46,845 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-model/2.7.12/sesame-model-2.7.12.pom
+2015-05-20 15:56:47,016 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-core/2.7.12/sesame-core-2.7.12.pom
+2015-05-20 15:56:47,216 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame/2.7.12/sesame-2.7.12.pom
+2015-05-20 15:56:47,440 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-util/2.7.12/sesame-util-2.7.12.pom
+2015-05-20 15:56:47,503 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2015-05-20 15:56:47,609 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2015-05-20 15:56:48,130 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2015-05-20 15:56:48,165 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2015-05-20 15:56:48,239 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2015-05-20 15:56:48,340 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2015-05-20 15:56:48,448 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2015-05-20 15:56:48,942 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2015-05-20 15:56:48,988 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2015-05-20 15:56:49,121 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2015-05-20 15:56:49,405 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-api/2.7.12/sesame-rio-api-2.7.12.pom
+2015-05-20 15:56:49,584 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio/2.7.12/sesame-rio-2.7.12.pom
+2015-05-20 15:56:49,745 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-languages/2.7.12/sesame-rio-languages-2.7.12.pom
+2015-05-20 15:56:49,940 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-datatypes/2.7.12/sesame-rio-datatypes-2.7.12.pom
+2015-05-20 15:56:50,109 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-binary/2.7.12/sesame-rio-binary-2.7.12.pom
+2015-05-20 15:56:50,308 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-n3/2.7.12/sesame-rio-n3-2.7.12.pom
+2015-05-20 15:56:50,497 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-turtle/2.7.12/sesame-rio-turtle-2.7.12.pom
+2015-05-20 15:56:50,705 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/commons-io/commons-io/2.4/commons-io-2.4.pom
+2015-05-20 15:56:51,119 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/commons/commons-parent/25/commons-parent-25.pom
+2015-05-20 15:56:51,381 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-nquads/2.7.12/sesame-rio-nquads-2.7.12.pom
+2015-05-20 15:56:51,578 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-ntriples/2.7.12/sesame-rio-ntriples-2.7.12.pom
+2015-05-20 15:56:51,758 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-rdfjson/2.7.12/sesame-rio-rdfjson-2.7.12.pom
+2015-05-20 15:56:51,925 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/fasterxml/jackson/core/jackson-core/2.2.1/jackson-core-2.2.1.pom
+2015-05-20 15:56:52,404 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/fasterxml/oss-parent/10/oss-parent-10.pom
+2015-05-20 15:56:52,625 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-rdfxml/2.7.12/sesame-rio-rdfxml-2.7.12.pom
+2015-05-20 15:56:52,788 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-trix/2.7.12/sesame-rio-trix-2.7.12.pom
+2015-05-20 15:56:52,965 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-trig/2.7.12/sesame-rio-trig-2.7.12.pom
+2015-05-20 15:56:53,019 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java-sesame/0.5.0/jsonld-java-sesame-0.5.0.pom
+2015-05-20 15:56:53,149 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/github/jsonld-java/jsonld-java-sesame/0.5.0/jsonld-java-sesame-0.5.0.pom
+2015-05-20 15:56:53,807 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/github/jsonld-java/jsonld-java-sesame/0.5.0/jsonld-java-sesame-0.5.0.pom
+2015-05-20 15:56:53,846 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/github/jsonld-java/jsonld-java-sesame/0.5.0/jsonld-java-sesame-0.5.0.pom
+2015-05-20 15:56:53,935 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/github/jsonld-java/jsonld-java-sesame/0.5.0/jsonld-java-sesame-0.5.0.pom
+2015-05-20 15:56:54,044 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java-integration/0.5.0/jsonld-java-integration-0.5.0.pom
+2015-05-20 15:56:54,150 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/github/jsonld-java/jsonld-java-integration/0.5.0/jsonld-java-integration-0.5.0.pom
+2015-05-20 15:56:54,777 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/github/jsonld-java/jsonld-java-integration/0.5.0/jsonld-java-integration-0.5.0.pom
+2015-05-20 15:56:54,816 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/github/jsonld-java/jsonld-java-integration/0.5.0/jsonld-java-integration-0.5.0.pom
+2015-05-20 15:56:55,004 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/github/jsonld-java/jsonld-java-integration/0.5.0/jsonld-java-integration-0.5.0.pom
+2015-05-20 15:56:55,138 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+2015-05-20 15:56:55,255 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+2015-05-20 15:56:55,906 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+2015-05-20 15:56:55,946 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+2015-05-20 15:56:56,055 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom
+2015-05-20 15:56:56,160 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+2015-05-20 15:56:56,296 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+2015-05-20 15:56:56,974 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+2015-05-20 15:56:57,047 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+2015-05-20 15:56:57,125 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.7/slf4j-parent-1.7.7.pom
+2015-05-20 15:56:57,609 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/httpcomponents/httpclient-cache/4.2.5/httpclient-cache-4.2.5.pom
+2015-05-20 15:56:57,803 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.pom
+2015-05-20 15:56:57,992 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/httpcomponents/httpcomponents-core/4.2.4/httpcomponents-core-4.2.4.pom
+2015-05-20 15:56:58,052 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.pom
+2015-05-20 15:56:58,156 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.pom
+2015-05-20 15:56:58,871 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.pom
+2015-05-20 15:56:58,909 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.pom
+2015-05-20 15:56:59,002 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.7/jcl-over-slf4j-1.7.7.pom
+2015-05-20 15:56:59,254 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-sesame/0.6.1/semargl-sesame-0.6.1.pom
+2015-05-20 15:56:59,449 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-integration/0.6.1/semargl-integration-0.6.1.pom
+2015-05-20 15:56:59,677 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-parent/0.6.1/semargl-parent-0.6.1.pom
+2015-05-20 15:57:00,017 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-core/0.6.1/semargl-core-0.6.1.pom
+2015-05-20 15:57:00,190 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-rdfa/0.6.1/semargl-rdfa-0.6.1.pom
+2015-05-20 15:57:00,404 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/semarglproject/semargl-rdf/0.6.1/semargl-rdf-0.6.1.pom
+2015-05-20 15:57:00,578 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio-api/2.7.5/sesame-rio-api-2.7.5.pom
+2015-05-20 15:57:00,753 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-rio/2.7.5/sesame-rio-2.7.5.pom
+2015-05-20 15:57:00,935 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-core/2.7.5/sesame-core-2.7.5.pom
+2015-05-20 15:57:01,124 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame/2.7.5/sesame-2.7.5.pom
+2015-05-20 15:57:01,313 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-model/2.7.5/sesame-model-2.7.5.pom
+2015-05-20 15:57:01,702 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/openrdf/sesame/sesame-util/2.7.5/sesame-util-2.7.5.pom
+2015-05-20 15:57:01,767 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/inject/guice/4.0-beta/guice-4.0-beta.pom
+2015-05-20 15:57:01,869 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/google/inject/guice/4.0-beta/guice-4.0-beta.pom
+2015-05-20 15:57:02,372 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/google/inject/guice/4.0-beta/guice-4.0-beta.pom
+2015-05-20 15:57:02,428 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/inject/guice/4.0-beta/guice-4.0-beta.pom
+2015-05-20 15:57:02,511 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/inject/guice/4.0-beta/guice-4.0-beta.pom
+2015-05-20 15:57:02,763 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/inject/guice-parent/4.0-beta/guice-parent-4.0-beta.pom
+2015-05-20 15:57:02,929 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/google/5/google-5.pom
+2015-05-20 15:57:03,097 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava/11.0.1/guava-11.0.1.pom
+2015-05-20 15:57:03,257 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava-parent/11.0.1/guava-parent-11.0.1.pom
+2015-05-20 15:57:03,355 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.pom
+2015-05-20 15:57:03,477 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.pom
+2015-05-20 15:57:03,975 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.pom
+2015-05-20 15:57:04,028 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.pom
+2015-05-20 15:57:04,093 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/inject/extensions/guice-multibindings/4.0-beta/guice-multibindings-4.0-beta.pom
+2015-05-20 15:57:04,211 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/inject/extensions/extensions-parent/4.0-beta/extensions-parent-4.0-beta.pom
+2015-05-20 15:57:04,317 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/google/inject/extensions/extensions-parent/4.0-beta/extensions-parent-4.0-beta.pom
+2015-05-20 15:57:04,827 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/google/inject/extensions/extensions-parent/4.0-beta/extensions-parent-4.0-beta.pom
+2015-05-20 15:57:04,865 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/google/inject/extensions/extensions-parent/4.0-beta/extensions-parent-4.0-beta.pom
+2015-05-20 15:57:04,943 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/inject/extensions/extensions-parent/4.0-beta/extensions-parent-4.0-beta.pom
+2015-05-20 15:57:05,153 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/directory/studio/org.apache.commons.io/2.4/org.apache.commons.io-2.4.pom
+2015-05-20 15:57:05,337 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/directory/studio/parent-libraries/2.0.0.v20130125/parent-libraries-2.0.0.v20130125.pom
+2015-05-20 15:57:05,504 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/directory/studio/parent/2.0.0.v20130125/parent-2.0.0.v20130125.pom
+2015-05-20 15:57:05,725 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/directory/project/project/27/project-27.pom
+2015-05-20 15:57:05,798 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/joda-time/joda-time/2.3/joda-time-2.3.pom
+2015-05-20 15:57:05,904 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/joda-time/joda-time/2.3/joda-time-2.3.pom
+2015-05-20 15:57:06,416 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/joda-time/joda-time/2.3/joda-time-2.3.pom
+2015-05-20 15:57:06,463 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom
+2015-05-20 15:57:06,600 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom
+2015-05-20 15:57:06,759 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-apibinding/3.4.5/owlapi-apibinding-3.4.5.pom
+2015-05-20 15:57:06,869 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-apibinding/3.4.5/owlapi-apibinding-3.4.5.pom
+2015-05-20 15:57:07,388 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-apibinding/3.4.5/owlapi-apibinding-3.4.5.pom
+2015-05-20 15:57:07,430 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-apibinding/3.4.5/owlapi-apibinding-3.4.5.pom
+2015-05-20 15:57:07,516 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-apibinding/3.4.5/owlapi-apibinding-3.4.5.pom
+2015-05-20 15:57:07,623 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-parent/3.4.5/owlapi-parent-3.4.5.pom
+2015-05-20 15:57:07,739 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-parent/3.4.5/owlapi-parent-3.4.5.pom
+2015-05-20 15:57:08,255 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-parent/3.4.5/owlapi-parent-3.4.5.pom
+2015-05-20 15:57:08,290 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parent/3.4.5/owlapi-parent-3.4.5.pom
+2015-05-20 15:57:08,382 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parent/3.4.5/owlapi-parent-3.4.5.pom
+2015-05-20 15:57:08,621 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/sonatype/oss/oss-parent/6/oss-parent-6.pom
+2015-05-20 15:57:08,679 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-api/3.4.5/owlapi-api-3.4.5.pom
+2015-05-20 15:57:08,773 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-api/3.4.5/owlapi-api-3.4.5.pom
+2015-05-20 15:57:09,304 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-api/3.4.5/owlapi-api-3.4.5.pom
+2015-05-20 15:57:09,354 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-api/3.4.5/owlapi-api-3.4.5.pom
+2015-05-20 15:57:09,601 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-api/3.4.5/owlapi-api-3.4.5.pom
+2015-05-20 15:57:09,708 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+2015-05-20 15:57:09,811 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+2015-05-20 15:57:10,302 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+2015-05-20 15:57:10,340 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+2015-05-20 15:57:10,443 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/felix/org.osgi.core/1.0.0/org.osgi.core-1.0.0.pom
+2015-05-20 15:57:10,550 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
+2015-05-20 15:57:10,659 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
+2015-05-20 15:57:11,195 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
+2015-05-20 15:57:11,233 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
+2015-05-20 15:57:11,323 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/felix/felix/1.0.0/felix-1.0.0.pom
+2015-05-20 15:57:11,429 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-impl/3.4.5/owlapi-impl-3.4.5.pom
+2015-05-20 15:57:11,532 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-impl/3.4.5/owlapi-impl-3.4.5.pom
+2015-05-20 15:57:12,030 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-impl/3.4.5/owlapi-impl-3.4.5.pom
+2015-05-20 15:57:12,070 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-impl/3.4.5/owlapi-impl-3.4.5.pom
+2015-05-20 15:57:12,144 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-impl/3.4.5/owlapi-impl-3.4.5.pom
+2015-05-20 15:57:12,257 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-parsers/3.4.5/owlapi-parsers-3.4.5.pom
+2015-05-20 15:57:12,359 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-parsers/3.4.5/owlapi-parsers-3.4.5.pom
+2015-05-20 15:57:12,864 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-parsers/3.4.5/owlapi-parsers-3.4.5.pom
+2015-05-20 15:57:12,904 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parsers/3.4.5/owlapi-parsers-3.4.5.pom
+2015-05-20 15:57:12,986 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-parsers/3.4.5/owlapi-parsers-3.4.5.pom
+2015-05-20 15:57:13,093 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/net/sourceforge/owlapi/owlapi-tools/3.4.5/owlapi-tools-3.4.5.pom
+2015-05-20 15:57:13,207 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/net/sourceforge/owlapi/owlapi-tools/3.4.5/owlapi-tools-3.4.5.pom
+2015-05-20 15:57:13,738 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/net/sourceforge/owlapi/owlapi-tools/3.4.5/owlapi-tools-3.4.5.pom
+2015-05-20 15:57:13,779 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-tools/3.4.5/owlapi-tools-3.4.5.pom
+2015-05-20 15:57:13,881 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/owlapi/owlapi-tools/3.4.5/owlapi-tools-3.4.5.pom
+2015-05-20 15:57:14,232 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-core/2.12.1-3/jena-sparql-api-core-2.12.1-3.pom
+2015-05-20 15:57:14,452 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-parent/2.12.1-3/jena-sparql-api-parent-2.12.1-3.pom
+2015-05-20 15:57:14,631 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-utils/2.12.1-3/jena-sparql-api-utils-2.12.1-3.pom
+2015-05-20 15:57:14,727 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2015-05-20 15:57:14,822 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2015-05-20 15:57:15,314 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2015-05-20 15:57:15,351 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2015-05-20 15:57:15,423 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.5.8/slf4j-api-1.5.8.pom
+2015-05-20 15:57:15,540 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+2015-05-20 15:57:15,634 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+2015-05-20 15:57:16,138 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+2015-05-20 15:57:16,176 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+2015-05-20 15:57:16,266 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.5.8/slf4j-parent-1.5.8.pom
+2015-05-20 15:57:16,411 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2015-05-20 15:57:16,503 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2015-05-20 15:57:17,045 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2015-05-20 15:57:17,084 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2015-05-20 15:57:17,206 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2015-05-20 15:57:17,394 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+2015-05-20 15:57:17,528 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+2015-05-20 15:57:18,030 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+2015-05-20 15:57:18,077 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+2015-05-20 15:57:18,161 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom
+2015-05-20 15:57:18,264 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+2015-05-20 15:57:18,358 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+2015-05-20 15:57:18,855 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+2015-05-20 15:57:18,897 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+2015-05-20 15:57:19,073 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.10/slf4j-parent-1.7.10.pom
+2015-05-20 15:57:19,395 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+2015-05-20 15:57:19,618 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/google/guava/guava-parent/14.0.1/guava-parent-14.0.1.pom
+2015-05-20 15:57:19,795 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-cache-h2/2.12.1-3/jena-sparql-api-cache-h2-2.12.1-3.pom
+2015-05-20 15:57:19,951 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-resources/2.12.1-3/jena-sparql-api-resources-2.12.1-3.pom
+2015-05-20 15:57:20,034 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/h2database/h2/1.4.184/h2-1.4.184.pom
+2015-05-20 15:57:20,128 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/h2database/h2/1.4.184/h2-1.4.184.pom
+2015-05-20 15:57:20,614 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/h2database/h2/1.4.184/h2-1.4.184.pom
+2015-05-20 15:57:20,649 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/h2database/h2/1.4.184/h2-1.4.184.pom
+2015-05-20 15:57:20,712 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/h2database/h2/1.4.184/h2-1.4.184.pom
+2015-05-20 15:57:21,193 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/dllearner/interfaces/1.0/interfaces-1.0.jar
+2015-05-20 15:57:21,307 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/dllearner/components-core/1.0/components-core-1.0.jar
+2015-05-20 15:57:21,414 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.jar
+2015-05-20 15:57:21,517 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.jar
+2015-05-20 15:57:21,661 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar
+2015-05-20 15:57:23,023 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar
+2015-05-20 15:57:23,104 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+2015-05-20 15:57:23,329 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar
+2015-05-20 15:57:23,383 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java/0.4/jsonld-java-0.4.jar
+2015-05-20 15:57:23,601 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/github/jsonld-java/jsonld-java/0.4/jsonld-java-0.4.jar
+2015-05-20 15:57:23,641 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar
+2015-05-20 15:57:23,730 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+2015-05-20 15:57:23,822 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar
+2015-05-20 15:57:23,936 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/log4j/log4j/1.2.17/log4j-1.2.17.jar
+2015-05-20 15:57:24,746 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/log4j/log4j/1.2.17/log4j-1.2.17.jar
+2015-05-20 15:57:24,795 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/joda-time/joda-time/2.3/joda-time-2.3.jar
+2015-05-20 15:57:24,891 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-core/2.12.1-3/jena-sparql-api-core-2.12.1-3.jar
+2015-05-20 15:57:25,268 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-core/2.12.1-3/jena-sparql-api-core-2.12.1-3.jar
+2015-05-20 15:57:25,312 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-utils/2.12.1-3/jena-sparql-api-utils-2.12.1-3.jar
+2015-05-20 15:57:25,460 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-utils/2.12.1-3/jena-sparql-api-utils-2.12.1-3.jar
+2015-05-20 15:57:25,506 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/slf4j/slf4j-ext/1.6.0/slf4j-ext-1.6.0.jar
+2015-05-20 15:57:25,610 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/ch/qos/cal10n/cal10n-api/0.7.2/cal10n-api-0.7.2.jar
+2015-05-20 15:57:25,717 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/commons-collections/commons-collections/2.1/commons-collections-2.1.jar
+2015-05-20 15:57:26,126 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/commons-collections/commons-collections/2.1/commons-collections-2.1.jar
+2015-05-20 15:57:26,173 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-cache-h2/2.12.1-3/jena-sparql-api-cache-h2-2.12.1-3.jar
+2015-05-20 15:57:26,304 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-cache-h2/2.12.1-3/jena-sparql-api-cache-h2-2.12.1-3.jar
+2015-05-20 15:57:26,351 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-resources/2.12.1-3/jena-sparql-api-resources-2.12.1-3.jar
+2015-05-20 15:57:26,460 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/org/aksw/jena-sparql-api/jena-sparql-api-resources/2.12.1-3/jena-sparql-api-resources-2.12.1-3.jar
+2015-05-20 15:57:26,519 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/internal/com/h2database/h2/1.4.184/h2-1.4.184.jar
+2015-05-20 15:57:28,792 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/snapshots/org/dllearner/interfaces/1.0/interfaces-1.0.jar
+2015-05-20 15:57:29,421 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/dllearner/interfaces/1.0/interfaces-1.0.jar
+2015-05-20 15:57:29,654 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.aksw.org/repository/snapshots/org/dllearner/components-core/1.0/components-core-1.0.jar
+2015-05-20 15:57:30,633 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/dllearner/components-core/1.0/components-core-1.0.jar
+2015-05-20 15:57:30,682 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.jar
+2015-05-20 15:57:30,781 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.jar
+2015-05-20 15:57:30,863 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar
+2015-05-20 15:57:30,972 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+2015-05-20 15:57:31,088 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar
+2015-05-20 15:57:31,190 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/joda-time/joda-time/2.3/joda-time-2.3.jar
+2015-05-20 15:57:31,293 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/org/slf4j/slf4j-ext/1.6.0/slf4j-ext-1.6.0.jar
+2015-05-20 15:57:31,393 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/ch/qos/cal10n/cal10n-api/0.7.2/cal10n-api-0.7.2.jar
+2015-05-20 15:57:31,501 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.aksw.org/repository/snapshots/com/h2database/h2/1.4.184/h2-1.4.184.jar
+2015-05-20 15:57:32,334 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.jar
+2015-05-20 15:57:32,853 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.jar
+2015-05-20 15:57:33,345 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar
+2015-05-20 15:57:33,869 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+2015-05-20 15:57:34,362 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar
+2015-05-20 15:57:34,881 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/joda-time/joda-time/2.3/joda-time-2.3.jar
+2015-05-20 15:57:35,387 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/org/slf4j/slf4j-ext/1.6.0/slf4j-ext-1.6.0.jar
+2015-05-20 15:57:35,878 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/ch/qos/cal10n/cal10n-api/0.7.2/cal10n-api-0.7.2.jar
+2015-05-20 15:57:36,413 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://dev.davidsoergel.com/nexus/content/repositories/releases/com/h2database/h2/1.4.184/h2-1.4.184.jar
+2015-05-20 15:57:36,475 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.jar
+2015-05-20 15:57:38,617 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-arq/2.11.2/jena-arq-2.11.2.jar
+2015-05-20 15:57:38,665 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.jar
+2015-05-20 15:57:39,879 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/jena/jena-core/2.11.2/jena-core-2.11.2.jar
+2015-05-20 15:57:39,910 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar
+2015-05-20 15:57:39,996 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/jcl-over-slf4j/1.7.6/jcl-over-slf4j-1.7.6.jar
+2015-05-20 15:57:40,035 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+2015-05-20 15:57:40,116 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+2015-05-20 15:57:40,149 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar
+2015-05-20 15:57:40,244 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-log4j12/1.7.6/slf4j-log4j12-1.7.6.jar
+2015-05-20 15:57:40,280 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar
+2015-05-20 15:57:40,758 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar
+2015-05-20 15:57:40,792 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/slf4j/slf4j-ext/1.6.0/slf4j-ext-1.6.0.jar
+2015-05-20 15:57:40,895 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/slf4j/slf4j-ext/1.6.0/slf4j-ext-1.6.0.jar
+2015-05-20 15:57:40,930 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/ch/qos/cal10n/cal10n-api/0.7.2/cal10n-api-0.7.2.jar
+2015-05-20 15:57:41,019 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/ch/qos/cal10n/cal10n-api/0.7.2/cal10n-api-0.7.2.jar
+2015-05-20 15:57:41,060 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/h2database/h2/1.4.184/h2-1.4.184.jar
+2015-05-20 15:57:42,359 [Worker-22] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/h2database/h2/1.4.184/h2-1.4.184.jar
+2015-05-20 15:57:44,172 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:57:44,172 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:57:44,174 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:57:44,175 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:57:46,870 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:57:46,871 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:57:46,873 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:57:46,873 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:57:48,067 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 15:57:48,068 [Worker-23] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 15:58:47,486 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:58:47,487 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:58:47,489 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:58:47,489 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:59:19,106 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Repo\DL-Learner-web\DLLearnerWeb\pom.xml.
+2015-05-20 15:59:19,174 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:19,174 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:59:19,176 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:19,177 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:59:20,676 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:20,676 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:59:20,694 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:20,695 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 15:59:21,841 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 15:59:21,841 [Worker-24] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 15:59:49,986 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Repo\DL-Learner-web\DLLearnerWeb\pom.xml.
+2015-05-20 15:59:50,042 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:50,042 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 15:59:50,044 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 15:59:50,044 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:00:34,472 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Repo\DL-Learner-web\DLLearnerWeb\pom.xml.
+2015-05-20 16:00:36,832 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:00:36,833 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:00:36,835 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:00:36,835 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:00:40,585 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:00:40,586 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:00:40,589 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:00:40,589 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:00:41,726 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 16:00:41,726 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 16:05:16,418 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:05:16,418 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:05:16,420 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:05:16,421 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:19:40,785 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-20 16:19:48,006 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:19:48,008 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:19:48,011 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:19:48,012 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:21:48,130 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:21:48,132 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:21:48,134 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:21:48,134 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:23:59,740 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:23:59,741 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:23:59,743 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:23:59,744 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:24:39,495 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:24:39,495 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:24:39,498 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:24:39,499 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:24:41,762 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:24:41,763 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:24:41,765 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:24:41,765 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:31:34,514 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-20 16:31:44,465 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:31:44,466 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:31:44,470 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:31:44,470 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:32:53,670 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:53,670 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:32:53,673 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:53,673 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:32:56,413 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:56,414 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:32:56,417 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:56,417 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:32:58,751 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:58,752 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 16:32:58,754 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 16:32:58,755 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 16:33:12,738 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 16:33:12,740 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
