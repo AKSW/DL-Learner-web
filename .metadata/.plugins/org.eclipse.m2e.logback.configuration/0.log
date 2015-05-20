@@ -1,0 +1,665 @@
+2015-05-20 10:39:50,827 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml
+2015-05-20 10:39:52,167 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:39:53,317 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerFrontend/src/main/java
+2015-05-20 10:39:53,317 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DLLearnerFrontend/src/main/resources
+2015-05-20 10:39:53,317 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerFrontend/src/test/java
+2015-05-20 10:39:53,697 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:39:54,029 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2015-05-20 10:39:55,100 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:39:55,182 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:39:55,182 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:39:55,192 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:39:55,192 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:41:27,494 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml
+2015-05-20 10:41:27,595 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:41:27,864 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerFrontend/src/main/java
+2015-05-20 10:41:27,874 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DLLearnerFrontend/src/main/resources
+2015-05-20 10:41:27,874 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerFrontend/src/test/java
+2015-05-20 10:41:28,066 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2015-05-20 10:41:28,676 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:41:29,249 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:41:29,249 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:41:29,259 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:41:29,259 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:41:30,171 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerFrontend:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\pom.xml.
+2015-05-20 10:41:30,453 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:41:30,463 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:41:30,463 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:41:30,463 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:41:59,621 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 10:42:08,346 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend
+2015-05-20 10:42:08,346 [Worker-6] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 10:43:17,556 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:17,566 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-20 10:43:17,666 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:17,666 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:43:18,691 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:18,692 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:43:18,694 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:18,695 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:43:45,701 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:45,711 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-20 10:43:45,711 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:43:45,711 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 10:51:21,717 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:51:21,989 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 10:51:21,989 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 10:51:21,999 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 10:51:21,999 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 10:51:22,161 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 10:51:22,201 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:51:22,499 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 10:51:22,499 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 10:51:22,509 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 10:51:22,510 [Worker-15] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 10:51:22,606 [Worker-15] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 10:51:22,850 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:22,851 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:51:22,853 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:22,854 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:51:50,783 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:50,793 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:51:50,793 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:50,793 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:51:54,615 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:54,615 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:51:54,615 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:51:54,615 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:53:16,553 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:53:16,888 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:53:16,888 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:53:16,888 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:53:16,888 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:53:44,700 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:53:44,740 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:53:44,740 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:53:44,740 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:53:44,740 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:40,047 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:40,049 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:40,051 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:40,051 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:43,691 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:43,691 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:43,691 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:43,691 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:58,641 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:58,641 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:54:58,641 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:54:58,641 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:56:20,053 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:56:20,688 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:56:20,688 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:56:20,688 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:56:20,688 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:56:30,105 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 10:56:30,155 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:56:30,205 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 10:56:30,205 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 10:56:30,215 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 10:56:30,215 [Worker-9] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 10:56:30,340 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 10:56:30,379 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 10:56:30,551 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:56:30,551 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 10:56:30,561 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 10:56:30,561 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:39:40,144 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:39:40,145 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:39:40,147 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:39:40,148 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:41:30,864 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:41:30,866 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:41:30,868 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:41:30,868 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:42:21,728 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:42:21,729 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:42:21,731 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:42:21,732 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:42:29,286 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:42:29,287 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:42:29,289 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:42:29,289 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:09,402 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:46:09,558 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.17/jersey-container-servlet-2.17.pom
+2015-05-20 12:46:09,674 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.17/jersey-container-servlet-2.17.pom
+2015-05-20 12:46:09,721 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/project/2.17/project-2.17.pom
+2015-05-20 12:46:09,804 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/project/2.17/project-2.17.pom
+2015-05-20 12:46:09,847 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.17/project-2.17.pom
+2015-05-20 12:46:10,403 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.17/project-2.17.pom
+2015-05-20 12:46:10,537 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-bom/2.4.0-b10/hk2-bom-2.4.0-b10.pom
+2015-05-20 12:46:10,714 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-bom/2.4.0-b10/hk2-bom-2.4.0-b10.pom
+2015-05-20 12:46:10,776 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.17/jersey-container-servlet-core-2.17.pom
+2015-05-20 12:46:10,848 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.17/jersey-container-servlet-core-2.17.pom
+2015-05-20 12:46:10,905 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b10/javax.inject-2.4.0-b10.pom
+2015-05-20 12:46:10,981 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b10/javax.inject-2.4.0-b10.pom
+2015-05-20 12:46:11,044 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/2.4.0-b10/external-2.4.0-b10.pom
+2015-05-20 12:46:11,116 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/2.4.0-b10/external-2.4.0-b10.pom
+2015-05-20 12:46:11,160 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-parent/2.4.0-b10/hk2-parent-2.4.0-b10.pom
+2015-05-20 12:46:11,398 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-parent/2.4.0-b10/hk2-parent-2.4.0-b10.pom
+2015-05-20 12:46:11,481 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.17/jersey-common-2.17.pom
+2015-05-20 12:46:11,632 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.17/jersey-common-2.17.pom
+2015-05-20 12:46:11,803 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.17/jersey-guava-2.17.pom
+2015-05-20 12:46:11,926 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.17/jersey-guava-2.17.pom
+2015-05-20 12:46:11,973 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.17/project-2.17.pom
+2015-05-20 12:46:12,405 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.17/project-2.17.pom
+2015-05-20 12:46:12,448 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.17/project-2.17.pom
+2015-05-20 12:46:12,594 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.17/project-2.17.pom
+2015-05-20 12:46:12,649 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b10/hk2-api-2.4.0-b10.pom
+2015-05-20 12:46:12,752 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b10/hk2-api-2.4.0-b10.pom
+2015-05-20 12:46:12,803 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b10/hk2-utils-2.4.0-b10.pom
+2015-05-20 12:46:12,875 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b10/hk2-utils-2.4.0-b10.pom
+2015-05-20 12:46:12,928 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b10/aopalliance-repackaged-2.4.0-b10.pom
+2015-05-20 12:46:13,016 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b10/aopalliance-repackaged-2.4.0-b10.pom
+2015-05-20 12:46:13,144 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b10/hk2-locator-2.4.0-b10.pom
+2015-05-20 12:46:13,220 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b10/hk2-locator-2.4.0-b10.pom
+2015-05-20 12:46:13,588 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.17/jersey-server-2.17.pom
+2015-05-20 12:46:13,673 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.17/jersey-server-2.17.pom
+2015-05-20 12:46:13,717 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.17/jersey-client-2.17.pom
+2015-05-20 12:46:13,843 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.17/jersey-client-2.17.pom
+2015-05-20 12:46:13,926 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.17/jersey-media-jaxb-2.17.pom
+2015-05-20 12:46:14,415 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.17/jersey-media-jaxb-2.17.pom
+2015-05-20 12:46:14,459 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/project/2.17/project-2.17.pom
+2015-05-20 12:46:14,552 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/project/2.17/project-2.17.pom
+2015-05-20 12:46:14,702 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.17/jersey-container-servlet-2.17.jar
+2015-05-20 12:46:14,826 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.17/jersey-container-servlet-2.17.jar
+2015-05-20 12:46:14,858 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.17/jersey-container-servlet-core-2.17.jar
+2015-05-20 12:46:15,021 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.17/jersey-container-servlet-core-2.17.jar
+2015-05-20 12:46:15,057 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.17/jersey-common-2.17.jar
+2015-05-20 12:46:15,616 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.17/jersey-common-2.17.jar
+2015-05-20 12:46:15,648 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.17/jersey-guava-2.17.jar
+2015-05-20 12:46:16,332 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.17/jersey-guava-2.17.jar
+2015-05-20 12:46:16,365 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.17/jersey-server-2.17.jar
+2015-05-20 12:46:16,979 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.17/jersey-server-2.17.jar
+2015-05-20 12:46:17,009 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.17/jersey-media-jaxb-2.17.jar
+2015-05-20 12:46:17,131 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/media/jersey-media-jaxb/2.17/jersey-media-jaxb-2.17.jar
+2015-05-20 12:46:17,166 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.17/jersey-client-2.17.jar
+2015-05-20 12:46:17,322 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.17/jersey-client-2.17.jar
+2015-05-20 12:46:17,358 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b10/hk2-api-2.4.0-b10.jar
+2015-05-20 12:46:17,583 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.4.0-b10/hk2-api-2.4.0-b10.jar
+2015-05-20 12:46:17,611 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b10/hk2-utils-2.4.0-b10.jar
+2015-05-20 12:46:17,774 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.4.0-b10/hk2-utils-2.4.0-b10.jar
+2015-05-20 12:46:17,805 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b10/aopalliance-repackaged-2.4.0-b10.jar
+2015-05-20 12:46:17,893 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b10/aopalliance-repackaged-2.4.0-b10.jar
+2015-05-20 12:46:17,932 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b10/javax.inject-2.4.0-b10.jar
+2015-05-20 12:46:18,005 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.4.0-b10/javax.inject-2.4.0-b10.jar
+2015-05-20 12:46:18,037 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b10/hk2-locator-2.4.0-b10.jar
+2015-05-20 12:46:18,234 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.4.0-b10/hk2-locator-2.4.0-b10.jar
+2015-05-20 12:46:22,726 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:22,727 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:22,729 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:22,730 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:24,150 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:24,151 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:24,154 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:24,154 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:43,414 [Worker-26] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 12:46:43,450 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:46:43,715 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:46:43,715 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:46:43,716 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:46:43,716 [Worker-26] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 12:46:43,814 [Worker-26] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 12:46:44,311 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:44,312 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:46:44,313 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:46:44,314 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:06,230 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:47:06,526 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:06,526 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:06,529 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:06,530 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:07,935 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:07,936 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:07,938 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:07,939 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:27,608 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:47:27,865 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:27,866 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:27,868 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:27,868 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:29,305 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:29,306 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:29,308 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:29,309 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:43,811 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 12:47:43,861 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:47:44,149 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:47:44,150 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:47:44,150 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:47:44,151 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 12:47:44,270 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 12:47:44,663 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:44,664 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:44,665 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:44,666 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:50,697 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 12:47:57,872 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 12:47:57,872 [Worker-28] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 12:47:58,026 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:47:58,377 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:58,378 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:47:58,380 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:47:58,381 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:48:28,403 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:48:28,728 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:48:28,728 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:48:28,729 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:48:28,730 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:48:29,977 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:48:29,981 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:48:29,983 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:48:29,984 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:48:32,847 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 12:48:46,376 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 12:48:46,376 [Worker-20] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 12:52:26,630 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:52:26,639 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-20 12:52:26,648 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:52:26,648 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 12:53:51,327 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml
+2015-05-20 12:53:52,095 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:53:52,313 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:53:52,313 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:53:52,314 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:53:52,371 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2015-05-20 12:53:52,720 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:53:53,218 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:53:53,219 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:53:53,221 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:53:53,222 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 12:53:53,494 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:53:54,267 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:53:54,270 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:53:54,273 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:53:54,273 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 12:54:36,901 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml
+2015-05-20 12:54:36,978 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:54:37,281 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:54:37,281 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:54:37,282 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:54:37,336 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2015-05-20 12:54:37,560 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:54:37,965 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:54:37,966 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:54:37,968 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:54:37,968 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 12:54:38,452 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:54:39,035 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:54:39,036 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:54:39,038 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:54:39,038 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 12:57:23,425 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:57:23,901 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:57:23,901 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:57:23,902 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:57:23,903 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 12:57:24,075 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 12:57:24,118 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:57:24,568 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/main/java
+2015-05-20 12:57:24,569 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/main/resources overlaps with sources folder /DLLearnerWeb/src/main/resources
+2015-05-20 12:57:24,575 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DLLearnerWeb/src/test/java
+2015-05-20 12:57:24,575 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /DLLearnerWeb/src/test/resources overlaps with sources folder /DLLearnerWeb/src/test/resources
+2015-05-20 12:57:24,677 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 12:57:24,831 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:57:24,832 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:57:24,834 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:57:24,835 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:58:26,587 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:58:26,623 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:58:26,624 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:58:26,626 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:58:26,627 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:58:53,020 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:58:53,055 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:58:53,055 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:58:53,059 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 12:58:53,060 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 12:59:55,241 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 12:59:55,481 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.6/jersey-container-servlet-2.6.pom
+2015-05-20 12:59:55,616 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.6/jersey-container-servlet-2.6.pom
+2015-05-20 12:59:55,693 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/project/2.6/project-2.6.pom
+2015-05-20 12:59:55,814 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/project/2.6/project-2.6.pom
+2015-05-20 12:59:55,873 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.6/project-2.6.pom
+2015-05-20 12:59:56,533 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/project/2.6/project-2.6.pom
+2015-05-20 12:59:56,611 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-bom/2.2.0/hk2-bom-2.2.0.pom
+2015-05-20 12:59:56,915 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-bom/2.2.0/hk2-bom-2.2.0.pom
+2015-05-20 12:59:57,013 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.6/jersey-container-servlet-core-2.6.pom
+2015-05-20 12:59:57,122 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.6/jersey-container-servlet-core-2.6.pom
+2015-05-20 12:59:57,191 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.2.0/javax.inject-2.2.0.pom
+2015-05-20 12:59:57,297 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.2.0/javax.inject-2.2.0.pom
+2015-05-20 12:59:57,363 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/2.2.0/external-2.2.0.pom
+2015-05-20 12:59:57,494 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/2.2.0/external-2.2.0.pom
+2015-05-20 12:59:57,629 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-public/2.2.0/hk2-public-2.2.0.pom
+2015-05-20 12:59:57,764 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-public/2.2.0/hk2-public-2.2.0.pom
+2015-05-20 12:59:57,891 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-parent/2.2.0/hk2-parent-2.2.0.pom
+2015-05-20 12:59:58,263 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-parent/2.2.0/hk2-parent-2.2.0.pom
+2015-05-20 12:59:58,330 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.6/jersey-server-2.6.pom
+2015-05-20 12:59:58,454 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.6/jersey-server-2.6.pom
+2015-05-20 12:59:58,533 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.6/jersey-common-2.6.pom
+2015-05-20 12:59:58,648 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.6/jersey-common-2.6.pom
+2015-05-20 13:00:00,104 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.6/jersey-guava-2.6.pom
+2015-05-20 13:00:00,286 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.6/jersey-guava-2.6.pom
+2015-05-20 13:00:00,350 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.6/project-2.6.pom
+2015-05-20 13:00:00,477 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/project/2.6/project-2.6.pom
+2015-05-20 13:00:00,559 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.6/project-2.6.pom
+2015-05-20 13:00:00,702 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/project/2.6/project-2.6.pom
+2015-05-20 13:00:00,765 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.2.0/hk2-api-2.2.0.pom
+2015-05-20 13:00:00,994 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.2.0/hk2-api-2.2.0.pom
+2015-05-20 13:00:01,085 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.2.0/hk2-utils-2.2.0.pom
+2015-05-20 13:00:01,235 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.2.0/hk2-utils-2.2.0.pom
+2015-05-20 13:00:01,377 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.2.0/aopalliance-repackaged-2.2.0.pom
+2015-05-20 13:00:01,555 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.2.0/aopalliance-repackaged-2.2.0.pom
+2015-05-20 13:00:01,630 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.2.0/hk2-locator-2.2.0.pom
+2015-05-20 13:00:01,897 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.2.0/hk2-locator-2.2.0.pom
+2015-05-20 13:00:01,997 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-kernel-parent/2.2.0/hk2-kernel-parent-2.2.0.pom
+2015-05-20 13:00:02,235 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-kernel-parent/2.2.0/hk2-kernel-parent-2.2.0.pom
+2015-05-20 13:00:02,318 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.6/jersey-client-2.6.pom
+2015-05-20 13:00:02,484 [Worker-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.6/jersey-client-2.6.pom
+2015-05-20 13:00:02,631 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.6/jersey-container-servlet-2.6.jar
+2015-05-20 13:00:02,795 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.6/jersey-container-servlet-2.6.jar
+2015-05-20 13:00:02,858 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.6/jersey-container-servlet-core-2.6.jar
+2015-05-20 13:00:03,159 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet-core/2.6/jersey-container-servlet-core-2.6.jar
+2015-05-20 13:00:03,202 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.2.0/javax.inject-2.2.0.jar
+2015-05-20 13:00:03,309 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/javax.inject/2.2.0/javax.inject-2.2.0.jar
+2015-05-20 13:00:03,386 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.6/jersey-common-2.6.jar
+2015-05-20 13:00:04,561 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-common/2.6/jersey-common-2.6.jar
+2015-05-20 13:00:04,627 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.6/jersey-guava-2.6.jar
+2015-05-20 13:00:05,667 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.6/jersey-guava-2.6.jar
+2015-05-20 13:00:05,736 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.2.0/hk2-api-2.2.0.jar
+2015-05-20 13:00:05,979 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-api/2.2.0/hk2-api-2.2.0.jar
+2015-05-20 13:00:06,023 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.2.0/hk2-utils-2.2.0.jar
+2015-05-20 13:00:06,165 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-utils/2.2.0/hk2-utils-2.2.0.jar
+2015-05-20 13:00:06,215 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.2.0/aopalliance-repackaged-2.2.0.jar
+2015-05-20 13:00:06,349 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/external/aopalliance-repackaged/2.2.0/aopalliance-repackaged-2.2.0.jar
+2015-05-20 13:00:06,396 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.2.0/hk2-locator-2.2.0.jar
+2015-05-20 13:00:06,673 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/hk2/hk2-locator/2.2.0/hk2-locator-2.2.0.jar
+2015-05-20 13:00:06,727 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.6/jersey-server-2.6.jar
+2015-05-20 13:00:07,535 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-server/2.6/jersey-server-2.6.jar
+2015-05-20 13:00:07,581 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.6/jersey-client-2.6.jar
+2015-05-20 13:00:07,785 [Worker-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.6/jersey-client-2.6.jar
+2015-05-20 13:00:09,869 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:00:09,870 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:00:09,872 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:00:09,873 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:00:14,264 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:00:17,199 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:00:17,199 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:02:06,082 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:02:06,085 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:02:06,088 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:02:06,088 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:02:18,165 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:02:22,166 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:02:22,166 [Worker-10] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:03:38,982 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:03:38,983 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:03:38,985 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:03:38,986 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:03:52,275 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:03:52,276 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:03:52,278 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:03:52,278 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:04:00,723 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:04:00,724 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:04:00,726 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:04:00,727 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:04:02,832 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:04:02,833 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:04:02,834 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:04:02,835 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:05:08,034 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:05:08,519 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:05:08,520 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:05:08,522 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:05:08,523 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:05:10,625 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:05:10,627 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:05:10,631 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:05:10,632 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:05:14,372 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:05:16,905 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:05:16,905 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:07:26,588 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:07:27,318 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:07:27,319 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:07:27,321 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:07:27,322 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:08:47,764 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:08:47,765 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2015-05-20 13:08:47,771 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:08:47,771 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerFrontend\src\test\resources
+2015-05-20 13:08:47,962 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:08:47,973 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:08:47,976 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:08:47,976 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:08:55,278 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:08:58,229 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:08:58,229 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:09:12,397 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:09:12,398 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:09:12,400 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:09:12,401 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:09:18,037 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:09:21,181 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:09:21,181 [Worker-12] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:09:54,816 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:09:54,817 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:09:54,819 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:09:54,820 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:13,237 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:10:13,237 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:10:20,144 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:20,145 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:20,148 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:20,149 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:42,328 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:42,329 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:42,331 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:42,332 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:48,581 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:48,582 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:10:48,584 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:10:48,585 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:12:18,945 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:12:18,946 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:12:18,948 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:12:18,949 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:28,044 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:13:28,200 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.xx/jersey-container-servlet-2.xx.pom
+2015-05-20 13:13:28,202 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.containers:jersey-container-servlet:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:28,294 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.xx/jersey-client-2.xx.pom
+2015-05-20 13:13:28,296 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.core:jersey-client:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:28,393 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/containers/jersey-container-servlet/2.xx/jersey-container-servlet-2.xx.jar
+2015-05-20 13:13:28,460 [Worker-19] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/glassfish/jersey/core/jersey-client/2.xx/jersey-client-2.xx.jar
+2015-05-20 13:13:28,665 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:28,666 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:28,668 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:28,668 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:29,719 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.containers:jersey-container-servlet:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:29,721 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.core:jersey-client:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:29,911 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:13:29,914 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.containers:jersey-container-servlet:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:29,917 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.core:jersey-client:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:29,963 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:29,963 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:29,965 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:29,965 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:47,126 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.containers:jersey-container-servlet:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:47,128 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.core:jersey-client:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:47,280 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.watte:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:13:47,283 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.containers:jersey-container-servlet:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:47,285 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.glassfish.jersey.core:jersey-client:jar:2.xx is missing, no dependency information available
+2015-05-20 13:13:47,331 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:47,331 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:47,333 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:13:47,334 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-05-20 13:13:54,124 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:13:59,940 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:13:59,940 [Worker-14] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 13:21:48,538 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:21:49,363 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /DLLearnerWeb/src/main/java because it overlaps with /DLLearnerWeb/src
+2015-05-20 13:21:49,363 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /DLLearnerWeb/src/test/java because it overlaps with /DLLearnerWeb/src
+2015-05-20 13:21:49,844 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2015-05-20 13:21:49,889 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:21:50,218 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /DLLearnerWeb/src/main/java because it overlaps with /DLLearnerWeb/src
+2015-05-20 13:21:50,218 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /DLLearnerWeb/src/test/java because it overlaps with /DLLearnerWeb/src
+2015-05-20 13:21:50,326 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2015-05-20 13:21:50,630 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:21:50,631 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:21:50,634 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:21:50,635 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:22:16,101 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:22:16,102 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:22:16,104 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:22:16,105 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:22:32,962 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:22:40,458 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:22:40,459 [Worker-3] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 13:23:47,229 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:23:47,424 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:23:47,425 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:23:47,427 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:23:47,427 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:23:52,133 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:23:52,133 [Worker-4] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 13:24:18,640 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:24:18,718 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:24:18,718 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:24:18,720 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:24:18,721 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:24:21,143 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:24:21,144 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 13:24:52,570 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:24:52,571 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:24:52,572 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:24:52,573 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:26:07,213 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:26:07,358 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:07,358 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:26:07,360 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:07,361 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:26:09,634 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:26:09,634 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dmaven.test.skip=true -DskipTests clean install
+2015-05-20 13:26:18,824 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:18,825 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:26:18,827 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:18,828 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:26:49,331 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: DLLearnerWeb:DLLearnerWeb:0.0.1-SNAPSHOT @ D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\pom.xml.
+2015-05-20 13:26:49,505 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:49,506 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:26:49,509 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:26:49,510 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:26:59,486 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2015-05-20 13:27:02,833 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:27:02,834 [Worker-0] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 13:27:56,231 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:27:56,231 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:27:56,233 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:27:56,233 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:36:09,613 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-20 13:36:11,387 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:36:11,389 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:36:11,392 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:36:11,393 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:36:12,471 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:36:12,472 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\main\resources
+2015-05-20 13:36:12,473 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:36:12,474 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Dropbox\JavaPlace 8.0\DLLearnerWeb\src\test\resources
+2015-05-20 13:57:57,335 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:57:57,357 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 13:57:57,370 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:57:57,370 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 13:57:58,398 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-20 13:58:52,874 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:58:52,875 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 13:58:52,877 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 13:58:52,877 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-20 13:58:56,676 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Dropbox\JavaPlace 8.0\DLLearnerWeb
+2015-05-20 13:58:56,677 [Worker-2] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean install
+2015-05-20 14:00:29,048 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 14:00:29,049 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-20 14:00:29,051 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-20 14:00:29,051 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
