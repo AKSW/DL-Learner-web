@@ -3,3 +3,7 @@
 1432112083221	Delete element
 1432112085576	Delete element
 1432119725648	Move 'WEB-INF' to 'webapp'
+1432160135830	Delete element
+1432221309051	Rename type 'Hello'
+1432228891744	Delete element
+1432229582904	Rename local variable 'form'

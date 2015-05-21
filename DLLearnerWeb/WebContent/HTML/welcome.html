@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DLLearner Web Frontend</title>
+<script src="../../Script/FromJSON.js"></script>
+</head>
+<body>
+	<!-- action="../rest/welcome/config"  -->
+	<form id="formHTML">
+		<p>
+			Config:<br>
+			<textarea name="input_config" cols="50" rows="10"></textarea>
+			<br>OWL:<br>
+			<textarea name="input_owl" cols="50" rows="10"></textarea>
+		</p>
+		<p>
+			<input type="button" value="adasd" name="btn" onClick="callConfigPage()">Send
+			config
+			</button>
+		</p>
+	</form>
+
+	<form id="hiddenForm" action="../welcome/config" method="Post">
+		<input id="configInput" type="hidden" name="config">
+	
+	</form>
+</body>
+</html>
