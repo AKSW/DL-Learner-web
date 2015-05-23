@@ -1,0 +1,119 @@
+body {
+	background-color: #BDD8F0;
+	font-family: 'Oxygen';
+}
+
+#formHTML {
+	
+	
+	text-color: red;
+}
+
+#config_textarea_div {
+	float: left;
+	margin-left: 20px;	
+}
+
+#ks_textarea_div {
+	float: left;
+	margin-left: 40px;
+}
+
+#dll_result_div {
+	float: left;
+	margin-left: 40px;
+}
+
+#sendConfigButton {
+	vertical-align: bottom;
+}
+
+/* Dropdown Menu */
+nav {
+	margin-left: 20px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+nav ul {
+	background: #0b479d;
+	padding: 0px 10px;
+	width: 100%;
+	list-style: none;
+	position: relative;
+	display: inline-table; 
+}
+
+nav ul:after {
+	/*content: ""; */
+	clear: both;
+	display: block;
+}
+
+/* 
+	<li>'s of main <ul>. Those <li> contain the Main Menu Items names.
+ */
+nav ul li {
+	float: left;
+}
+
+/*	
+	Hover on Main Menu Items
+ */
+nav ul li:hover {
+	background: #3B6BB0;
+}
+
+/* 	Hover on Main Menu Items' Link 
+	(which results in the same actions as on 'nav ul li:hover')
+ */
+nav ul li:hover a {
+	
+}
+
+/* Main Items */
+nav ul li a {
+	display: block;
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+/* Dropdown Menu of Main Items (outer) */
+nav ul ul {
+	background: #3B6BB0;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: auto;
+}
+
+/* Dropdown Menu of Main Items (inner) */
+nav ul ul li {
+	float: none;
+	position: relative;
+}
+
+/* Sub Items */
+nav ul ul li a {
+	padding: 10px 10px;
+	color: black;
+}
+
+nav ul ul li a:hover {
+	text-decoration: underline;
+}
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}

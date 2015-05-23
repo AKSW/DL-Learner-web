@@ -7,3 +7,20 @@
 1432221309051	Rename type 'Hello'
 1432228891744	Delete element
 1432229582904	Rename local variable 'form'
+1432309609885	Delete element
+1432309620053	Delete element
+1432309715280	Delete element
+1432317731448	Rename local variable 'rawFile'
+1432390888119	Rename local variable 'file'
+1432391363553	Rename resource 'SubmitedContet'
+1432391597127	Rename resource 'FromJSON.js'
+1432392137406	Delete element
+1432399457771	Rename local variable 'input_owl'
+1432400253267	Rename method 'convertJSON'
+1432400282974	Rename field 'owl'
+1432402154346	Rename local variable 'owlFile'
+1432402575286	Delete element
+1432406872263	Delete element
+1432406895015	Delete element
+1432407056997	Delete element
+1432407134975	Rename resource 'FormToJSON.js'

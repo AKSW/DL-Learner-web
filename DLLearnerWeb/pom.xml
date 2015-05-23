@@ -44,14 +44,16 @@
 			<version>1.0</version>
 		</dependency>
 
-		<!-- JSON Libary -->
+		<!-- Used for deleting session directories -->
 		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20141113</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
 		</dependency>
+
+
 	</dependencies>
-	
+
 	<!-- Added, because maven couldnt find the web.xml -->
 	<build>
 		<plugins>

@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta content="text/html; charset=ISO-8859-1">
 <title>DLLearner Web Frontend</title>
-<script src="../../Script/FromJSON.js"></script>
+<script src="../../Script/sonic.js"></script>
+<script src="../../Script/Misc.js"></script>
+<script src="../../Script/DataHandler.js"></script>
+<script src="../../Script/FileReader.js"></script>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<link rel='stylesheet' id='google_font'
+	href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext'
+	type='text/css' media='all' />
+<link rel="stylesheet" href="../../HTML/style.css">
+
 </head>
 <body>
-	<!-- action="../rest/welcome/config"  -->
-	<form id="formHTML">
-		<p>
-			Config:<br>
-			<textarea name="input_config" cols="50" rows="10"></textarea>
-			<br>OWL:<br>
-			<textarea name="input_owl" cols="50" rows="10"></textarea>
-		</p>
-		<p>
-			<input type="button" value="adasd" name="btn" onClick="callConfigPage()">Send
-			config
-			</button>
-		</p>
-	</form>
+	<!-- BEGIN Navigation Bar -->
+	<nav>
+		<ul>
+			<li><a href="#">Configuration</a></li>
+			<li><a href="#">Load Examples</a>
+				<ul>
+					<li><a href="#" onClick="loadFatherExample()">Father</a></li>
+					<li><a href="#">Stuff</a></li>
+				</ul></li>
+			<li><a href="#" onClick="callDLL()">Submit configuration</a></li>
+			<li><a href="#" onClick="loading()">Loading Demo</a></li>
+		</ul>
+	</nav>
+	<!-- END Navigation Bar -->
 
+	<!-- BEGIN Textareas -->
+	<form id="formHTML">
+		<div id="config_textarea_div">
+			Configuration:<br>
+			<textarea name="input_config" id="input_config" cols="60" rows="40" wrap="off" onchange="updateKnowledgeSource(this.value)"
+				oninput="updateKnowledgeSource(this.value)"></textarea>
+		</div>
+		<div id="ks_textarea_div">
+			<div id="ksName">Knowledge Source:<br></div>
+			<textarea name="input_ks" id="input_ks" cols="60" rows="40" wrap="off"></textarea>
+		</div>
+		<div id="dll_result_div">
+			DL-Learner Results:<br>
+			<textarea name="dll_result_area" id="dll_result_area" cols="60" rows="40" wrap="off" readonly></textarea>
+		</div>
+	</form>
+	<!-- END Textareas -->
+
+	<!--  Hidden Form, so JavaScript can convert aboves form content into JSON and post it to rest-server -->
 	<form id="hiddenForm" action="../welcome/config" method="Post">
 		<input id="configInput" type="hidden" name="config">
-	
 	</form>
+
 </body>
 </html>
