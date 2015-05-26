@@ -28,11 +28,11 @@
 <fullyQualifiedTypeName name="com.google.gson.JsonSyntaxException"/>
 <fullyQualifiedTypeName name="org.apache.tomcat.util.http.fileupload.FileUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.Enumeration"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Appender"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
 <fullyQualifiedTypeName name="org.watte.ResultModel"/>
 <fullyQualifiedTypeName name="org.watte.ConfigModel"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

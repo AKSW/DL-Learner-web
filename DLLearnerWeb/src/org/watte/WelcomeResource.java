@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.servlet.ServletContext;
 import javax.ws.rs.FormParam;
@@ -83,7 +85,7 @@ public class WelcomeResource {
 			logger.error("Error converting JSON to ConfigModel");
 			return "Error converting JSON to ConfigModel";
 		}
-
+		
 		File sessionDir = createSessionDir();
 		
 		
@@ -168,7 +170,7 @@ public class WelcomeResource {
 	private void removeSessionDir(File sessionDir) {
 		
 		//Just removing our previously added FileAppend wont unlock dll-log.log
-		//But removing all Appenders work.
+		//But removing all Appenders works.
 		org.apache.log4j.Logger.getLogger("org.dllearner").removeAllAppenders();
 		
 		try {
@@ -185,8 +187,8 @@ public class WelcomeResource {
 			System.out.println(files.get(i).getName()+": "+files.get(i).delete());
 		}
 		
-		sessionDir.delete(); */
-		
+		sessionDir.delete(); 
+		*/
 	}
 
 	/**
@@ -278,7 +280,7 @@ public class WelcomeResource {
 		//randomize a session identifier
 		String session = ""+ (int)(Math.random()*10000);
 		//initiate a session folder file object
-		sessionDir = new File(context.getRealPath("/"+session));
+		sessionDir = new File(context.getRealPath("/SubmitedContent/"+session));
 		
 		//technically it is possible to create a same-titled session to a existing session 
 		//(which maybe last an average of 10seconds)
@@ -286,7 +288,7 @@ public class WelcomeResource {
 		//once in a million stuff.
 		while(sessionDir.exists()) {
 			session = ""+(int)(Math.random()*10000);
-			sessionDir = new File(context.getRealPath("/"+session));
+			sessionDir = new File(context.getRealPath("/SubmitedContent"+session));
 		}
 		//create directory structure
 		sessionDir.mkdirs();

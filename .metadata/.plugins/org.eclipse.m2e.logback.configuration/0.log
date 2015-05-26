@@ -4629,3 +4629,986 @@ Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angeg
 2015-05-23 21:31:27,858 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
 2015-05-23 21:31:27,859 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-05-23 21:31:27,860 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-24 20:19:14,534 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2015-05-24 20:19:15,830 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\Watte"): CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessBuilder.start(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.Runtime.exec(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.1.201504261725-r.jar:3.7.1.201504261725-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.1.201504261725-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_71]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.7.0_71]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angegebene Datei nicht finden
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.<init>(Unknown Source) ~[na:1.7.0_71]
+	at java.lang.ProcessImpl.start(Unknown Source) ~[na:1.7.0_71]
+	... 35 common frames omitted
+2015-05-24 20:19:16,095 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-24 20:19:16,095 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-24 20:19:16,099 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-24 20:19:16,099 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:27:09,742 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:27:09,762 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:27:09,762 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:27:09,762 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:27:13,102 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:27:13,102 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:27:13,112 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:27:13,112 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:29:22,763 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:29:22,763 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:29:22,763 [Worker-144] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:29:22,763 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:31:24,878 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:31:24,878 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:31:24,878 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:31:24,878 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:35:47,323 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:35:47,324 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:35:47,326 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:35:47,326 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:36:16,325 [Worker-145] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:36:16,327 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:36:16,329 [Worker-145] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:36:16,331 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:37:36,155 [Worker-145] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:37:36,155 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:37:36,165 [Worker-145] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:37:36,165 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:42:09,229 [Worker-160] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:42:09,230 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:42:09,232 [Worker-160] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:42:09,232 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:42:18,940 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:42:18,941 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:42:18,943 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:42:18,943 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:45:27,794 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:45:27,794 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:45:27,796 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:45:27,797 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:45:35,901 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:45:35,911 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:45:35,911 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:45:35,911 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:46:05,411 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:46:05,411 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:46:05,411 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:46:05,411 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:46:51,145 [Worker-167] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:46:51,145 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:46:51,145 [Worker-167] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:46:51,145 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:47:26,109 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:47:26,109 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:47:26,109 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:47:26,109 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:48:37,963 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:48:37,963 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:48:37,963 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:48:37,973 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:49:15,607 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:49:15,607 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:49:15,607 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:49:15,607 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:50:54,928 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:50:54,928 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:50:54,928 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:50:54,928 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:52:21,102 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:52:21,102 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:52:21,102 [Worker-158] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:52:21,102 [Worker-158] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:53:21,330 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:53:21,331 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:53:21,333 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:53:21,334 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:55:08,763 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:55:08,764 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:55:08,766 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:55:08,767 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:55:49,114 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:55:49,114 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:55:49,124 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:55:49,124 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:58:08,355 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:58:08,355 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:58:08,365 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:58:08,365 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 16:59:10,261 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:59:10,261 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 16:59:10,263 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 16:59:10,264 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:00:08,918 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:08,928 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:00:08,928 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:08,928 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:00:31,290 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:31,290 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:00:31,290 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:31,290 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:00:34,170 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:34,170 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:00:34,170 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:34,170 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:00:36,280 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:36,280 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:00:36,280 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:36,280 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:00:52,523 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:52,523 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:00:52,533 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:00:52,533 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:01:22,083 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:22,083 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:01:22,083 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:22,083 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:01:32,077 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:32,077 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:01:32,087 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:32,087 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:01:56,682 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:56,682 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:01:56,682 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:01:56,682 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:02:07,502 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:02:07,502 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:02:07,502 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:02:07,512 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:02:39,743 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:02:39,743 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:02:39,743 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:02:39,743 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:03:24,765 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:03:24,765 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:03:24,765 [Worker-179] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:03:24,775 [Worker-179] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:03:40,922 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:03:40,922 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:03:40,922 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:03:40,922 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:04:12,106 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:12,106 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:04:12,106 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:12,116 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:04:31,180 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:31,180 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:04:31,180 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:31,180 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:04:47,800 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:47,800 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:04:47,800 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:04:47,800 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:05:07,112 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:05:07,112 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:05:07,112 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:05:07,112 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:05:12,412 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:05:12,412 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:05:12,412 [Worker-178] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:05:12,412 [Worker-178] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:06:42,238 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:06:42,238 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:06:42,248 [Worker-182] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:06:42,248 [Worker-182] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:07:55,938 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:07:55,938 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:07:55,938 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:07:55,938 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:07:59,537 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:07:59,537 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:07:59,537 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:07:59,537 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:08:21,788 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:21,788 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:08:21,788 [Worker-176] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:21,788 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:08:38,603 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:38,603 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:08:38,613 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:38,613 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:08:47,255 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:47,255 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:08:47,265 [Worker-183] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:08:47,265 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:10:24,817 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:24,817 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:10:24,817 [Worker-186] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:24,817 [Worker-186] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:10:34,543 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:34,543 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:10:34,543 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:34,543 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:10:35,573 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:35,573 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:10:35,573 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:35,573 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:10:46,080 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:46,080 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:10:46,090 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:46,090 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:10:55,317 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:55,317 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:10:55,327 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:10:55,327 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:11:01,443 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:01,443 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:11:01,443 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:01,443 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:11:26,956 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:26,956 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:11:26,956 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:26,956 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:11:43,006 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:43,006 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:11:43,006 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:43,016 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:11:47,543 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:47,543 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:11:47,543 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:47,543 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:11:59,466 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:59,466 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:11:59,466 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:11:59,466 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:12:14,912 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:14,912 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:12:14,912 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:14,912 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:12:25,374 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:25,374 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:12:25,374 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:25,374 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:12:49,568 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:49,568 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:12:49,568 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:12:49,568 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:13:01,286 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:01,286 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:13:01,286 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:01,286 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:13:06,974 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:06,974 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:13:06,974 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:06,974 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:13:23,544 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:23,544 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:13:23,544 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:23,544 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:13:26,514 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:26,514 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:13:26,514 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:26,514 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:13:45,886 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:45,886 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:13:45,886 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:13:45,886 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:14:42,854 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:14:42,854 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:14:42,854 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:14:42,854 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:14:55,106 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:14:55,106 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:14:55,106 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:14:55,106 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:15,880 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:15,880 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:15,880 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:15,880 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:22,686 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:22,686 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:22,686 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:22,686 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:27,789 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:27,789 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:27,789 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:27,789 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:32,548 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:32,548 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:32,548 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:32,558 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:37,654 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:37,654 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:37,654 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:37,654 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:42,728 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:42,728 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:42,728 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:42,738 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:48,245 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:48,245 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:48,255 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:48,255 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:15:54,821 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:54,821 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:15:54,821 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:15:54,821 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:16:04,365 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:04,365 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:16:04,365 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:04,365 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:16:16,537 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:16,537 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:16:16,537 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:16,537 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:16:31,342 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:31,342 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:16:31,342 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:16:31,342 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:17:06,634 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:06,634 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:17:06,634 [Worker-189] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:06,634 [Worker-189] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:17:14,684 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:14,684 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:17:14,684 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:14,684 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:17:21,224 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:21,224 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:17:21,224 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:21,224 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:17:47,264 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:47,264 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:17:47,264 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:17:47,264 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:03,358 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:03,358 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:03,358 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:03,368 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:10,471 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:10,471 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:10,471 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:10,471 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:29,603 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:29,603 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:29,603 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:29,603 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:41,672 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:41,672 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:41,672 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:41,672 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:50,211 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:50,211 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:50,211 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:50,211 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:18:57,923 [Worker-190] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:57,923 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:18:57,923 [Worker-190] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:18:57,923 [Worker-190] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:19:07,358 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:07,358 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:19:07,358 [Worker-181] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:07,358 [Worker-181] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:19:13,352 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:13,352 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:19:13,352 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:13,352 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:19:20,180 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:20,180 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:19:20,180 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:20,180 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:19:27,190 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:27,190 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:19:27,190 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:27,190 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:19:45,611 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:45,611 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:19:45,611 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:19:45,611 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:20:33,381 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:20:33,381 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:20:33,391 [Worker-187] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:20:33,391 [Worker-187] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:24:27,456 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:24:27,456 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:24:27,456 [Worker-192] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:24:27,466 [Worker-192] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 17:40:06,803 [Worker-204] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:40:06,803 [Worker-204] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 17:40:06,803 [Worker-204] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 17:40:06,803 [Worker-204] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:55:17,967 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:17,977 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:55:17,977 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:17,977 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:55:31,378 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:31,378 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:55:31,378 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:31,378 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:55:40,079 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:40,079 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:55:40,079 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:40,079 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:55:48,178 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:48,178 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:55:48,178 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:48,178 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:55:50,603 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:50,603 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:55:50,603 [Worker-216] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:55:50,603 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:56:00,019 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:00,019 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:56:00,019 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:00,019 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:56:04,748 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:04,748 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:56:04,748 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:04,748 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:56:55,970 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:55,970 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:56:55,970 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:56:55,970 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:57:37,878 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:57:37,879 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:57:37,880 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:57:37,881 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:59:33,272 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:59:33,272 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:59:33,272 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:59:33,272 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 18:59:45,900 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:59:45,900 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 18:59:45,900 [Worker-215] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 18:59:45,900 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:00:24,936 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:00:24,936 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:00:24,946 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:00:24,946 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:02:02,393 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:02:02,393 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:02:02,393 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:02:02,393 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:03:37,814 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:03:37,814 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:03:37,814 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:03:37,814 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:05:29,213 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:05:29,213 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:05:29,213 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:05:29,213 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:05:41,825 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:05:41,825 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:05:41,825 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:05:41,825 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:06:20,700 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:06:20,700 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:06:20,700 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:06:20,700 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:06:29,604 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:06:29,604 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:06:29,604 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:06:29,604 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:07:13,047 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:07:13,047 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:07:13,047 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:07:13,047 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:07:41,021 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:07:41,021 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:07:41,021 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:07:41,021 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:08:07,629 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:07,629 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:08:07,629 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:07,629 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:08:12,968 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:12,968 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:08:12,968 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:12,968 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:08:19,823 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:19,823 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:08:19,823 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:08:19,823 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:09:13,384 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:13,384 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:09:13,394 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:13,394 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:09:34,092 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:34,092 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:09:34,092 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:34,092 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:09:42,952 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:42,952 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:09:42,952 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:42,952 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:09:52,007 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:52,007 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:09:52,007 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:52,007 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:09:54,019 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:54,019 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:09:54,019 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:09:54,019 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:11:47,549 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:11:47,549 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:11:47,549 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:11:47,549 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:11:59,694 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:11:59,694 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:11:59,694 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:11:59,694 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:12:17,853 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:12:17,854 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:12:17,855 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:12:17,855 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:12:45,982 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:12:45,982 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:12:45,982 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:12:45,982 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:03,367 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:03,367 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:03,367 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:03,367 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:12,720 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:12,720 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:12,720 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:12,720 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:22,850 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:22,860 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:22,860 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:22,860 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:32,196 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:32,196 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:32,216 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:32,216 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:42,660 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:42,660 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:42,660 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:42,660 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:49,170 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:49,170 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:49,170 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:49,170 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:13:56,221 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:56,221 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:13:56,221 [Worker-202] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:13:56,221 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:14:41,770 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:14:41,770 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:14:41,770 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:14:41,770 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:15:01,954 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:15:01,954 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:15:01,954 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:15:01,954 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:16:01,670 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:01,670 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:16:01,670 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:01,670 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:16:21,439 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:21,439 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:16:21,439 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:21,439 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:16:40,297 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:40,297 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:16:40,297 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:40,297 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:16:56,998 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:56,998 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:16:56,998 [Worker-207] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:16:56,998 [Worker-207] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:17:58,669 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:17:58,669 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:17:58,669 [Worker-224] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:17:58,669 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:22:40,395 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:22:40,395 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:22:40,395 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:22:40,405 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:23:14,635 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:23:14,635 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:23:14,635 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:23:14,635 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:23:46,249 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:23:46,249 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:23:46,249 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:23:46,249 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:24:24,378 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:24:24,378 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:24:24,388 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:24:24,388 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:25:02,725 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:02,725 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:25:02,725 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:02,725 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:25:03,758 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:03,758 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:25:03,758 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:03,758 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:25:18,008 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:18,008 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:25:18,008 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:18,008 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:25:21,477 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:21,477 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:25:21,477 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:25:21,477 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:26:21,299 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:26:21,299 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:26:21,299 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:26:21,299 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:27:02,586 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:27:02,586 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:27:02,586 [Worker-230] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:27:02,586 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:27:29,599 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:27:29,599 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:27:29,599 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:27:29,599 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:28:00,348 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:28:00,348 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:28:00,348 [Worker-225] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:28:00,348 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:29:20,243 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:29:20,243 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:29:20,243 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:29:20,243 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:29:46,336 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:29:46,336 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:29:46,336 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:29:46,336 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:30:21,093 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:30:21,093 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:30:21,093 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:30:21,093 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:30:39,051 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:30:39,051 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:30:39,051 [Worker-228] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:30:39,051 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:33:34,591 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:33:34,591 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:33:34,591 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:33:34,591 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:42:51,696 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:42:51,697 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:42:51,699 [Worker-226] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:42:51,699 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:50:28,772 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:50:28,772 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:50:28,772 [Worker-239] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:50:28,772 [Worker-239] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:51:44,971 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:51:44,971 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:51:44,971 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:51:44,971 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:51:54,281 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:51:54,282 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:51:54,284 [Worker-235] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:51:54,284 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:57:12,258 [Worker-238] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:57:12,258 [Worker-238] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:57:12,258 [Worker-238] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:57:12,258 [Worker-238] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 19:59:07,691 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:59:07,691 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 19:59:07,691 [Worker-249] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 19:59:07,691 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:00:06,576 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:00:06,576 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:00:06,576 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:00:06,576 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:00:50,925 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:00:50,925 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:00:50,925 [Worker-248] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:00:50,925 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:01:02,573 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:02,573 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:01:02,573 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:02,573 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:01:16,839 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:16,839 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:01:16,839 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:16,839 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:01:23,308 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:23,308 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:01:23,308 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:23,308 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:01:58,345 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:58,345 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:01:58,355 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:01:58,355 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:02:46,365 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:02:46,365 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:02:46,365 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:02:46,365 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:02:49,592 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:02:49,592 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:02:49,592 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:02:49,592 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:03:09,345 [Worker-250] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:03:09,345 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:03:09,345 [Worker-250] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:03:09,345 [Worker-250] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:03:51,524 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:03:51,524 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:03:51,524 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:03:51,524 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:04:29,070 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:04:29,070 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:04:29,070 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:04:29,070 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:07:16,751 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:16,751 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:07:16,751 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:16,751 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:07:27,996 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:27,996 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:07:27,996 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:27,996 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:07:45,601 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:45,601 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:07:45,601 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:07:45,601 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:08:05,978 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:05,978 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:08:05,978 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:05,978 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:08:12,768 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:12,768 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:08:12,768 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:12,768 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:08:31,580 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:31,580 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:08:31,580 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:31,580 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:08:47,798 [Worker-255] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:47,798 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:08:47,798 [Worker-255] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:08:47,798 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:09:08,925 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:08,925 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:09:08,925 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:08,925 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:09:30,958 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:30,958 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:09:30,958 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:30,958 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:09:44,782 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:44,782 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:09:44,782 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:44,782 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:09:56,062 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:56,072 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:09:56,072 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:09:56,072 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:10:04,015 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:10:04,025 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:10:04,025 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:10:04,025 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:10:26,533 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:10:26,533 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:10:26,533 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:10:26,533 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:11:21,957 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:11:21,957 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:11:21,957 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:11:21,957 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:11:29,639 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:11:29,639 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:11:29,639 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:11:29,639 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:13:08,579 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:13:08,579 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:13:08,579 [Worker-254] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:13:08,579 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:13:20,742 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:13:20,742 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:13:20,742 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:13:20,742 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:14:05,233 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:14:05,233 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:14:05,233 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:14:05,233 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:14:15,020 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:14:15,020 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:14:15,020 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:14:15,020 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:15:17,379 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:15:17,379 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:15:17,379 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:15:17,379 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:15:38,696 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:15:38,696 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:15:38,696 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:15:38,696 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:16:57,774 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:16:57,774 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:16:57,774 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:16:57,774 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:18:33,386 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:18:33,386 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:18:33,386 [Worker-252] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:18:33,386 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:21:17,910 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:21:17,910 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:21:17,910 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:21:17,910 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:21:52,948 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:21:52,958 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:21:52,968 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:21:52,968 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:22:07,077 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:07,087 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:22:07,087 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:07,087 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:22:31,007 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:31,007 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:22:31,007 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:31,007 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:22:46,019 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:46,019 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:22:46,019 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:22:46,019 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:23:23,384 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:23,384 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:23:23,384 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:23,384 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:23:28,799 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:28,809 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:23:28,809 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:28,809 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:23:58,314 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:58,324 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:23:58,324 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:23:58,324 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:24:35,273 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:35,273 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:24:35,273 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:35,273 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:24:42,305 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:42,315 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:24:42,315 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:42,315 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:24:53,370 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:53,370 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:24:53,370 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:24:53,370 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:25:05,864 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:05,864 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:25:05,864 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:05,864 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:25:19,797 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:19,807 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:25:19,807 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:19,807 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:25:24,491 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:24,491 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:25:24,491 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:24,491 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:25:42,278 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:42,288 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:25:42,288 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:42,288 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:25:48,429 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:48,430 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:25:48,431 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:25:48,432 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:26:00,431 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:00,431 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:26:00,431 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:00,431 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:26:06,813 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:06,813 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:26:06,813 [Worker-257] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:06,813 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:26:13,461 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:13,461 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:26:13,461 [Worker-259] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:13,461 [Worker-259] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:26:19,010 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:19,010 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:26:19,010 [Worker-253] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:26:19,010 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:35:59,147 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:35:59,147 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:35:59,147 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:35:59,147 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:36:07,889 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:07,889 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:36:07,889 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:07,889 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:36:13,777 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:13,777 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:36:13,777 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:13,777 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:36:30,267 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:30,267 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:36:30,267 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:30,267 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:36:38,417 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:38,417 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:36:38,417 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:38,417 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:36:41,696 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:41,706 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:36:41,706 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:36:41,706 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:38:56,918 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:38:56,918 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:38:56,918 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:38:56,918 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:40:00,665 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:00,665 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:40:00,665 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:00,665 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:40:20,482 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:20,482 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:40:20,482 [Worker-265] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:20,482 [Worker-265] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:40:31,800 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:31,800 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:40:31,800 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:31,800 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:40:48,551 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:48,551 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:40:48,551 [Worker-263] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:40:48,551 [Worker-263] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:41:51,011 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:41:51,011 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:41:51,011 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:41:51,011 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:42:19,903 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:42:19,903 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:42:19,913 [Worker-268] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:42:19,913 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:43:02,006 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:43:02,006 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:43:02,006 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:43:02,006 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:43:41,301 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:43:41,301 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:43:41,301 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:43:41,301 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-26 20:44:20,034 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:44:20,034 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-26 20:44:20,034 [Worker-261] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-26 20:44:20,034 [Worker-261] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
