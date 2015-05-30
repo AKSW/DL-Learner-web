@@ -41,22 +41,122 @@ body {
 	top: 40%;
 }
 
+#prefixes_view_canvas {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.7); /*dim the background*/
+}
+
+#prefixes_view_div {
+	display: inline-block;
+	background-color: #BDD8F0;
+	padding: 20px 20px;
+	margin: 100px auto;
+	
+}
+
+#prefixes_table {
+	/*
+	position: relative;
+	top: 120px; */
+	color: white;
+	background-color: #0b479d;
+	border-collapse: collapse;
+	border: 1px dotted white;
+}
+
+#prefixes_table td, th {
+	margin: 10px;
+	padding: 10px;
+	text-align: left;
+	border: 1px dotted white;
+}
+
+#button {
+	float: right;
+	margin-top: -20px;
+	margin-right: -10px;
+	cursor:pointer;
+    color: #000000;	
+}
+
 /* ### BEGIN TOOLBOX */
 #toolbox_outer_div {
+	display: block;
 	position: relative;
 	background: #0b479d;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 100px;
-	z-index: -1;
+	min-height: 120px;
+	z-index: 1;
 }
 
-/* Toolbox Headliner */
-#toolbox_outer_div #headline {
+#toolbox_outer_div:after, #toolbox_outer_div:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 10px;
+	width: 0;
 	position: absolute;
-	padding: 10px 20px;
+	pointer-events: none;
+}
+
+#toolbox_outer_div:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #0b479d;
+	border-width: 30px;
+	margin-left: -30px;
+	top: -60px;
+	left: 70px;
+}
+
+
+
+#toolbox_inner_div {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
 	color: white;
+	min-height: 100px;
+}
+
+#toolbox_inner_div table {
+	margin: 5px;
+	border: 1px dotted white;
+}
+
+#toolbox_inner_div td {
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+#toolbox_inner_div .tb_element {
+	margin-left: 5px;
+}
+
+#cross {
+	width: 15px;
+	height: 15px;
+	background: linear-gradient(to bottom, transparent 35%, #00FF00 35%, #00FF00 65%,
+		transparent 65%),
+		linear-gradient(to right, transparent 35%, #00FF00 35%, #00FF00 65%,
+		transparent 65%);
+	cursor: pointer;
+}
+
+#minus {
+	width: 15px;
+	height: 15px;
+	background: linear-gradient(to bottom, transparent 35%, #d00 35%, #d00 65%,
+		transparent 65%);
+	cursor: pointer;
 }
 /* ### END TOOLBOX */
 
@@ -83,6 +183,7 @@ nav ul {
 	list-style: none;
 	position: relative;
 	display: inline-table;
+	z-index: 10;
 }
 
 nav ul:after {

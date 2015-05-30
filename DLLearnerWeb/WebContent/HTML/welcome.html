@@ -18,7 +18,8 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <!-- css -->
-<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext'/>
+<link rel='stylesheet'
+	href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' />
 <link rel="stylesheet" href="../../HTML/style.css">
 </head>
 <body onload="init()">
@@ -26,23 +27,48 @@
 	<nav>
 		<ul>
 			<li><a href="#">Configuration</a>
-			<ul>
-				<li><a href="#" onClick="toggleToolbox()">Toolbox</a></li>
-			</ul></li>
+				<ul>
+					<li><a href="#" onClick="toggleToolbox()">Toolbox</a></li>
+				</ul></li>
 			<li><a href="#">Load Examples</a>
 				<ul>
 					<li><a href="#" onClick="loadFatherExample()">Father</a></li>
 					<li><a href="#">Stuff</a></li>
 				</ul></li>
 			<li><a href="#" onClick="callDLL()">Submit configuration</a></li>
-			<li><a href="#" onClick="loading()">Loading Demo</a></li>
 		</ul>
 	</nav>
 	<!-- END Navigation Bar -->
 
 	<!-- BEGIN Toolbox -->
 	<div id="toolbox_outer_div">
-		<span id="headline">Toolbox:</span>
+		<div id="toolbox_inner_div">
+
+			<table class="toolbox_table">
+				<!-- Prefix declaration -->
+				<tr>
+					<td>Prefix delcaration:</td>
+					<!-- Add-Cross -->
+					<td><div class="tb_element" id="cross" onClick="togglePrefixView()"></div></td>
+				</tr>
+				<!-- Knowledge Source Area -->
+				<tr>
+					<td>Knowledge Source Type:</td>
+					<td>
+						<form id="dropdown_menu_ks_type" class="tb_element">
+							<select>
+								<option>OWL File</option>
+								<option>KB File</option>
+							</select>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Knowledge Source Name:</td>
+					<td><input type="text" class="tb_element" id="tb_ks_name" placeholder="father.owl"></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	<!-- END Toolbox -->
 
@@ -75,6 +101,45 @@
 	<!-- Appears when DLL is working -->
 	<div id="loading">
 		<div id="loadingText" align="center">Solving..</div>
+	</div>
+
+	<!-- Prefixes overview -->
+	<div id="prefixes_view_canvas" align="center">
+		<div id="prefixes_view_div">
+			<!-- Close "popup" button -->
+			<div id="button" onClick="togglePrefixView()">x</div>
+			<table id="prefixes_table" align="center">
+				<tr>
+					<th>Abreviation</th>
+					<th>Value</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>ex</td>
+					<td>"http://localhost/foo#"</td>
+					<td><div id="minus" onClick="removePrefix(this)"></div></td>
+				</tr>
+			</table>
+			<br>
+			<!-- "Add prefix" button stuff -->
+			<table id="prefixes_add_table">
+				<tr>
+					<td>Abreviation</td>
+					<td><input type="text" id="prefix_abreviation"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Value</td>
+					<td><input type="text" id="prefix_value"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><button onClick="addPrefix()">Add</button></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 
 	<!--  Hidden Form, so JavaScript can convert aboves form content into JSON and post it to rest-server -->
