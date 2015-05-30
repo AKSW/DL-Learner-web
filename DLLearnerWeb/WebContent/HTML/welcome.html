@@ -10,6 +10,7 @@
 <!-- CodeMirror -->
 <script src="../../Script/lib/CodeMirror/lib/codemirror.js"></script>
 <script src="../../Script/lib/CodeMirror/mode/javascript/javascript.js"></script>
+<script src="../../Script/lib/CodeMirror/mode/ebnf/ebnf.js"></script>
 <script src="../../Script/lib/CodeMirror/mode/xml/xml.js"></script>
 <script src="../../Script/lib/CodeMirror/addon/scroll/simplescrollbars.js"></script>
 <link rel='stylesheet' href="../../Script/lib/CodeMirror/addon/scroll/simplescrollbars.css">
@@ -66,6 +67,19 @@
 				<tr>
 					<td>Knowledge Source Name:</td>
 					<td><input type="text" class="tb_element" id="tb_ks_name" placeholder="father.owl"></td>
+				</tr>
+				<!-- Reasoner -->
+				<tr>
+					<td>Reasoner Type:</td>
+					<td>
+						<form id="dropdown_menu_rs_type" class="tb_element">
+							<select>
+								<option>Fast Instance Checker</option>
+								<option>SPARQL Reasoner</option>
+								<option>Closed World Reasoner</option>
+							</select>
+						</form>
+					</td>
 				</tr>
 			</table>
 		</div>

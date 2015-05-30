@@ -8147,3 +8147,15 @@ Caused by: java.io.IOException: CreateProcess error=2, Das System kann die angeg
 2015-05-30 18:56:35,421 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
 2015-05-30 18:56:35,422 [Worker-93] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-05-30 18:56:35,422 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-30 19:23:57,424 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:23:57,424 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-30 19:23:57,424 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:23:57,424 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-30 19:33:49,223 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:33:49,233 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-30 19:33:49,233 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:33:49,233 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources
+2015-05-30 19:34:26,303 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:34:26,303 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\main\resources
+2015-05-30 19:34:26,303 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-05-30 19:34:26,303 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Repo\DL-Learner-web\DLLearnerWeb\src\test\resources

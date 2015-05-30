@@ -120,7 +120,7 @@ function initCodeMirror() {
 		// show linenumbers
 		lineNumbers : true,
 		// syntax mode: JavaScript (for now)
-		mode : 'javascript',
+		mode : 'ebnf',
 		// ScrollbarStyle (refers to script 'simplescrollbars.js' and
 		// 'simplescrollbars.css')
 		scrollbarStyle : 'simple'
