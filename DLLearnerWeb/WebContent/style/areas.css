@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+/*
+#config_textarea_div {
+	display: inline-block;
+	width: 700px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}*/
+
+#configurationDrop {
+	border:2px dotted #0B85A1;
+	background-color: red;
+	z-index: 12;
+}

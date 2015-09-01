@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="dllearner_frontend">
+<head>
+<meta charset="ISO-8859-1">
+<title>DL-Learner Frontend</title>
+<!-- CodeMirror -->
+<script src="../scripts/lib/CodeMirror/lib/codemirror.js" type="text/javascript"></script>
+<script src="../scripts/lib/CodeMirror/mode/ebnf/ebnf.js" type="text/javascript"></script>
+<script src="../scripts/lib/CodeMirror/mode/xml/xml.js" type="text/javascript"></script>
+<script src="../scripts/lib/CodeMirror/addon/scroll/simplescrollbars.js" type="text/javascript"></script>
+<link rel='stylesheet' href="../scripts/lib/CodeMirror/addon/scroll/simplescrollbars.css">
+<link rel='stylesheet' href="../scripts/lib/CodeMirror/lib/codemirror.css">
+<!-- jQuery -->
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<!-- Tooltip Libary -->
+<script src="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css">
+<!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js"></script>
+<!-- Load Own Scripts and Style Sheets-->
+<script src="../scripts/Angular/dllearner_frontend.js"></script>
+<script src="../scripts/Angular/AreaCtrl.js"></script>
+<script src="../scripts/Angular/ModuleSelectionCtrl.js"></script>
+<script src="../scripts/Angular/NavigationCtrl.js"></script>
+<script src="../scripts/Angular/ToolboxCtrl.js"></script>
+<script src="../scripts/Angular/TabCtrl.js"></script>
+<script src="../scripts/loadResources.js"></script>
+<!-- css -->
+<link rel='stylesheet'
+	href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' />
+</head>
+<body>
+	<!-- 
+		Start Navigation Bar
+	 -->
+	<nav class="navigation_bar" ng-controller="NavigationCtrl">
+		<ul>
+			<li><a href="#">Configuration</a>
+				<ul>
+					<li><a href="#" ng-click="toggleToolbox()">Toggle Toolbox</a></li>
+					<li><a href="#" ng-click="toggleModuleView()">Add Module</a></li>
+				</ul></li>
+			<li><a href="#">Load Examples</a>
+				<ul>
+					<li><a href="#" ng-click="loadFatherExample()">Father (OWL File)</a></li>
+					<li><a href="#" ng-click="foo()">Stuff</a></li>
+				</ul></li>
+			<li><a href="#" onClick="callDLL()">Submit configuration</a></li>
+		</ul>
+	</nav>
+	<!-- 
+		End Navigation Bar
+	 -->
+	<!-- 
+	 	Start Toolbox
+	  -->
+	<div id="toolbox_outer_div" ng-controller="ToolboxCtrl" >
+		<div id="toolbox_partial_component" ng-include="'../views/partials/component.htm'"></div>
+	</div>
+	<!--  
+	 	End Toolbox
+	 	 -->
+	<!-- 
+	 	Start Editors OLD
+	 
+	<div class="editAreas_div" ng-controller="ConfigAreaCtrl">
+		<div id="config_textarea_div">
+			Configuration:
+			<div id="expandArrowConf" class="arrowUp" ng-click="expandArea(this)"></div>
+			<br>
+			<div id="conf_area_div">
+				<textarea id="config_textareaaa"></textarea>
+			</div>
+		</div>
+	</div> -->
+	<!-- 
+		Start Editors New Fancy Tabs Stuff
+		-->
+	<div class="tabs" ng-controller="TabCtrl">
+		<div class="tabItems">
+		    <ul>
+		        <li ng-click="toggleTab($index)" ng-repeat="tab in tabs" ng-class="{ 'active': $index == activeTab }">
+		        	{{tab}}
+		        </li>
+		    </ul> 
+	 	</div>
+	    <div class="tabContent" ng-controller="AreaCtrl">
+	        <div id="confTab" ng-show="activeTab == 0">
+	        	<div id="configurationDrop">
+	        		DO STUFF
+					<textarea id="config_textarea"></textarea>
+				</div>
+	        </div>
+	 
+	        <div id="ksTab" ng-show="activeTab == 1">
+	            Knowledge Source
+	         </div>
+	         
+	         <div id="resultTab" ng-show="activeTab == 2">
+	         	Results
+	         </div>
+	         
+	         <div id="errorTab"  ng-show="activeTab == 3">
+	         	Errors
+	         </div>
+	    </div>
+	</div>
+
+	<!-- 
+		End Editors
+	 -->
+
+	<div id="module_canvas" style="overflow-y: scroll;" ng-controller="ModuleSelectionCtrl">
+		<div class="close_button" ng-click="toggleModuleView()">x</div>
+		<table id="selection" align="center">
+			<tr>
+				<th>Module</th>
+				<th>Component</th>
+			</tr>
+			<tr>
+				<td>
+					<nav>
+						<ul id="module_items">
+							<li ng-repeat="module in modules" ng-click="handleModuleSelection(module)">{{module.moduleName}}</li>
+						</ul>
+					</nav>
+				</td>
+				<td>
+					<nav>
+						<ul id="component_items">
+							<li ng-repeat="component in components" ng-click="handleComponentSelection(component)">{{component.componentName}}</li>
+						</ul>
+					</nav>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

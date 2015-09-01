@@ -11,9 +11,14 @@ public class Helper {
 	 */
 	public static String getConfigurationName(String confContent) {
 		String ksDefinition = getKSDefinition(confContent);
-		
-		String configurationName = ksDefinition.substring(0, ksDefinition.indexOf("."));
-		
+		String configurationName;
+		try {
+			 configurationName = ksDefinition.substring(0, ksDefinition.indexOf("."));
+		} catch(IndexOutOfBoundsException e) {
+			
+		} finally {
+			 configurationName = "url";
+		}
 		return configurationName;
 	}
 	

@@ -41,7 +41,13 @@
 		<dependency>
 			<groupId>org.dllearner</groupId>
 			<artifactId>interfaces</artifactId>
-			<version>1.0</version>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+			<version>0.9.10</version>
 		</dependency>
 
 		<!-- Used for deleting session directories -->

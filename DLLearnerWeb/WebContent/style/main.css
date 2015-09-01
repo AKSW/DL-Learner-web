@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+/*
+	Main Style file. Will define layouts on a most top design level.
+ */
+body {
+	font-family: 'Oxygen';
+	position: relative;
+	background-color: #e2ecf5;
+	background-image:
+		url('http://dl-learner.org/Images/Fotolia_bright_invers_blau_schmal5.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+}
+

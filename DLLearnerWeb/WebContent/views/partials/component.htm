@@ -1,0 +1,77 @@
+<div class="component_template" ng-repeat="component in selectedComponents track by $index">
+	<div class="component_template" id="component_name_div">
+		<table class="component_meta_table">
+			<tr>
+				<th><span class="component_template" id="component_name_field">Component Name:</span></th>
+				<th><span class="component_template" id="component_remove" ng-click="removeComponent($index)">Remove Component</span></th>
+			</tr>
+		</table>
+		<span class="component_template" id="component_name">{{component.componentName}}</span>
+	</div>
+	<div class="component_template" id="component_usage" ng-show="component.componentUsage">
+		Usage:<br>
+		{{component.componentUsage}}<br>
+	</div>
+	
+	<div class="component_template" id="component_options_table">
+		<table class="option_selection_table" >
+			<!-- 
+				First Row: Select an option and fill in a value
+			-->
+			<tr>
+				<td>
+					<!-- Input-form is bind via ng-model on the current repeated component. -->
+					Variable: <input id="component_variable" ng-model="component.componentVariable" ng-change="componentVariableChanged(component)">
+				</td>
+			</tr>
+			<tr ng-show="getOptionsByComponent(component).length > 0">
+				<td>
+					<div>
+						<select id="option_selection" ng-model="selectedOption" ng-options="option.optionName for option in getOptionsByComponent(component)"
+							ng-change="onOptionChange(selectedOption, $index)">
+						</select>
+						<img class="component_template" ng-model="imageHelp" id="option_help" src="../views/help.png">
+						<input id="option_value" ng-model="selectedOptionValue"
+							placeholder="{{selectedOption.optionDefaultValue || 'No default value'}}">
+						<!-- expression for changing input-tag into a checkbox
+							ng-attr-type="{{ (selectedOption.optionType == 'boolean' ? 'checkbox' : 'text') }}"  -->
+					</div>
+				</td>
+				<td>
+					<span class="component_template" id="add_option_span" ng-click="addOption(selectedOption, selectedOptionValue)">Add</span>
+				</td>
+			</tr>
+			<tr ng-show="!getOptionsByComponent(component).length > 0">
+				<td> No options avaiable.
+				</td>
+			</tr>
+		</table>
+		<br>
+		<!-- 
+				List all selected options.
+				Show only if selectedOptions Array has entries.
+		 -->
+		<table class="option_list_table" ng-show="getSelectedOptionsByComponent(component).length > 0">
+			<tr>
+				<th>Option Name</th>
+				<th>Description</th>
+				<th>Option Value</th>
+				<th></th>
+			</tr>
+			<tr ng-repeat="selectedOption in getSelectedOptionsByComponent(component)">
+				<td>
+					{{selectedOption.optionName}}
+				</td>
+				<td>
+					{{selectedOption.optionDescription}}
+				</td>
+				<td>
+					{{selectedOption.optionValue}}
+				</td>
+				<td>
+					<span class="component_template" id="remove_option_span" ng-click="removeOption($index, component)">Remove Option</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

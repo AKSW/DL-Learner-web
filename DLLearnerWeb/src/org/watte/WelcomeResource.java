@@ -9,14 +9,14 @@ package org.watte;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.io.PrintStream;
 
 import javax.servlet.ServletContext;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -29,7 +29,7 @@ import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.PatternLayout;
 import org.dllearner.cli.CLI;
-import org.dllearner.confparser3.ParseException;
+import org.dllearner.confparser.ParseException;
 import org.dllearner.core.ReasoningMethodUnsupportedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,17 +38,27 @@ import org.watte.ConfigModel;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
-@Path("/welcome")
+@Path("/welcomeOLD")
 public class WelcomeResource {
 
 	// org.dllearner.interfaces.CLI Instance for solving
 	private CLI cli = new CLI();
 	private static Logger logger = LoggerFactory.getLogger(WelcomeResource.class);
 	private FileAppender fileAppender;
-	
+
 	@Context
 	private ServletContext context;
 
+	
+	public WelcomeResource() {
+		//somtimes jersey wont recognize another package.
+		//somtimes it does..
+		
+		//ResourceConfig resourceConfig = new ResourceConfig();
+		//resourceConfig.packages("org.watte.datamodel");
+		
+	}
+	
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	/**
@@ -58,19 +68,31 @@ public class WelcomeResource {
 	 * @return
 	 */
 	public String welcome() {
-		return readHTML();
+		
+		//start check for an existing "log/error.log" path
+		//CLI will write into this file (just relative declaration).
+		//Not quite sure, how to handle this, so I'll create the desired file.
+		//CLI throws an Exception, when the file/directory not exist.
+		File errorLog = new File("log/error.log");
+		if(!errorLog.exists())
+			errorLog.getParentFile().mkdirs();
+		
+		return readHTML("/views/dllearner.html");
 	}
 
 	@POST
 	@Path("/config")
 	@Produces(MediaType.TEXT_PLAIN)
-	//uncool load:
-	//public String startCLI(@FormParam("config") String config) {
-	//
-	//cool load:
+	/**
+	 * Gets called by an ajax-request from JavaScript.
+	 * 
+	 * Returns the dllearner results.
+	 * @param config
+	 * @return String dllearner results
+	 */
 	public String startCLI(String config) {
 
-		logger.info("Retrieved JSON:\n"+config);
+		//logger.info("Retrieved JSON:\n"+config);
 		
 		try {
 			org.apache.log4j.Logger.getLogger("org.watte").setLevel(Level.toLevel("DEBUG"));
@@ -86,15 +108,17 @@ public class WelcomeResource {
 			return "Error converting JSON to ConfigModel";
 		}
 		
+		//create a sessionDir, which will be deleted afterwards
 		File sessionDir = createSessionDir();
-		
-		
+
 		// file to write in the config content
 		File confFile = new File(sessionDir, Helper.getConfigurationName(config)+".conf");
 		logger.debug("Configuration File name: "+confFile.getAbsolutePath());
 		// file to write in the owl content
 		File ksFile = new File(sessionDir, Helper.getKnowledgeFileName(config));
 		logger.debug("KS File name: "+ksFile.getAbsolutePath());
+		
+		File file = new File(sessionDir, "options.dat");
 		
 		// file to write in the DLLearner results
 		File dllResultFile = new File(sessionDir, "dll-log.log");
@@ -108,11 +132,12 @@ public class WelcomeResource {
 			PatternLayout layout = new PatternLayout("%d{ISO8601} %-5p [%t] %c: %m%n");
 
 			fileAppender = new FileAppender(layout, dllResultFile.getAbsolutePath());
+			fileAppender.setThreshold(Level.DEBUG);
 			
 			// append a file-logger to log4j, so we can read the dll-results
 			org.apache.log4j.Logger.getLogger("org.dllearner").addAppender(fileAppender);
+			
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
@@ -133,6 +158,14 @@ public class WelcomeResource {
 
 			bw.write(configModel.getKS());
 			bw.close();
+
+			/*
+			fw = new FileWriter(file);
+			bw = new BufferedWriter(fw);
+			
+			bw.write(docGen.getConfigDocumentationString());
+			bw.close(); */
+			
 		} catch (Exception e) {
 			logger.error("Unable to write config/owl content to file.");
 			return "Unable to write config/owl content to file.";
@@ -141,25 +174,53 @@ public class WelcomeResource {
 		String[] args = new String[1];
 		args[0] = confFile.getAbsolutePath();
 
-		//args[0] = "D:\\Dropbox\\JavaPlace 6.0\\dllearner-parent\\examples\\father.conf";
-
 		try {
 			cli.main(args);
-		} catch (ParseException e) {
-			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ReasoningMethodUnsupportedException e) {
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 		String dll_log = readDLL_Log(dllResultFile);
 		
-		removeSessionDir(sessionDir);
+		//removeSessionDir(sessionDir);
 
 		return dll_log;
 	}
 
+	@Path("/bla")
+	public String bla() {
+		String stacktraceFileName = "log/error.log";
+		
+		File sample = new File(stacktraceFileName);
+		
+		logger.info("File exists: "+sample.exists());
+		logger.info(sample.getAbsolutePath());
+		
+		try {
+			int[] array = new int[1];
+			
+			int baum = array[4];
+			
+		} catch (Exception e) {
+		
+			FileOutputStream fos;
+			try {
+				fos = new FileOutputStream(stacktraceFileName);
+				PrintStream ps = new PrintStream(fos);
+		        e.printStackTrace(ps);
+			} catch (FileNotFoundException e1) {
+				e1.printStackTrace();
+			}
+	        
+		}
+		return "";
+	}
+	
 	/**
 	 * Deletes the session directory.
 	 * 
@@ -176,19 +237,9 @@ public class WelcomeResource {
 		try {
 			FileUtils.deleteDirectory(sessionDir);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		/*
-		ArrayList<File> files = new ArrayList<File>(Arrays.asList(sessionDir.listFiles()));
-		
-		for(int i=0; i<files.size(); i++) {
-			System.out.println(files.get(i).getName()+": "+files.get(i).delete());
-		}
-		
-		sessionDir.delete(); 
-		*/
 	}
 
 	/**
@@ -201,6 +252,7 @@ public class WelcomeResource {
 	 */
 	private String readDLL_Log(File resultFile) {
 
+		//will contain the result content later.
 		String resultContent = "";
 
 		try {
@@ -229,13 +281,13 @@ public class WelcomeResource {
 	 * 
 	 * @return String HTML of welcome.html
 	 */
-	private String readHTML() {
+	private String readHTML(String path) {
 
 		String fileContent = "";
 		StringBuilder sb = new StringBuilder();
 
 		// Location of welcome.html file to read out of
-		File file = new File(context.getRealPath("/HTML/welcome.html"));
+		File file = new File(context.getRealPath(path));
 		FileReader fr;
 		BufferedReader br;
 
@@ -252,7 +304,6 @@ public class WelcomeResource {
 
 			br.close();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			System.out.println("Error loading html.");
 			e.printStackTrace();
 		}
@@ -288,12 +339,12 @@ public class WelcomeResource {
 		//once in a million stuff.
 		while(sessionDir.exists()) {
 			session = ""+(int)(Math.random()*10000);
-			sessionDir = new File(context.getRealPath("/SubmitedContent"+session));
+			sessionDir = new File(context.getRealPath("/SubmitedContent/"+session));
 		}
 		//create directory structure
 		sessionDir.mkdirs();
 
-		logger.debug("Created sessionDir: "+sessionDir.getAbsolutePath());
+		logger.info("Created sessionDir: "+sessionDir.getAbsolutePath());
 		
 		return sessionDir;
 	}

@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+.arrowUp {
+	display: inline-block;
+	border-color: black transparent;
+	border-style: solid;
+	border-width: 0px 10px 10px 10px;
+	height: 0px;
+	width: 0px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.arrowDown {
+	display: inline-block;
+	border-color: black transparent;
+	border-style: solid;
+	border-width: 10px 10px 0px 10px;
+	height: 0px;
+	width: 0px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.close_button {
+	line-height: 12px;
+	width: 18px;
+	font-size: 20pt;
+	color: white; 
+	font-family : tahoma;
+	margin-top: 1px;
+	margin-right: 2px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: tahoma;
+	cursor: pointer;
+}

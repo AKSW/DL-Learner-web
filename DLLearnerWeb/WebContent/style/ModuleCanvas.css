@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+
+#module_canvas {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.7); /* dim the background*/
+
+}
+
+
+/*
+	Disable any numeration styles
+*/
+#selection nav ul {
+	list-style: none;
+}
+
+/* 
+	TableHeader of Selection-Table
+*/
+#selection th{
+	margin: 40px;
+	padding: 70px;
+	padding-top: 20px;
+	font-size: 40px;
+	border: none;
+	color: white;
+}
+
+/* Row content will now be roof-aligned */
+#selection tr {
+	vertical-align: top;
+	overflow: scroll;
+	/*
+	max-width: 300px;
+	*/
+}
+
+#selection li {
+	background-color: red;
+	margin: 10px;
+	padding: 10px;
+	cursor: pointer;
+	/*
+	max-width: 300px;
+	*/
+}
