@@ -22,7 +22,8 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
     cmEditor.on("change", function() {
         if (cmEditor.hasFocus()) {
 
-            var allComponents = componentsService.getComponents();
+            //avoid having references.
+            var allComponents = angular.copy(componentsService.getComponents());
 
             //this objects stores the mapping from user-created component-variables
             //to the corresponding component object.
@@ -110,6 +111,9 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
                     }
                     //storing the user typed attribute name.
                     var attribute = null;
+                    //storing the user typed attribute value
+                    var attributeValue = null;
+
                     //if the start and end markers for attribute name were found
                     if (variableNamePosition != -1 && positionAttributeEnd != -1) {
                         //save the attribute name.
@@ -119,23 +123,49 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
                     //if the attribute following the prefix is not 'type'
                     if (attribute != null && attribute != "type") {
 
+                        //this would be just the check for String-values.
+                        //TODO: Numbers, Booleans, Arrays
                         var firstQuotation = line.indexOf("\"");
                         var secondQuotation = line.indexOf("\"", firstQuotation + 1);
 
                         if (firstQuotation != -1 && secondQuotation != -1) {
-                            var attributeValue = line.substring(firstQuotation + 1, secondQuotation);
+                            attributeValue = line.substring(firstQuotation + 1, secondQuotation);
+                        }
 
-                            //$log.debug("For component '" + compObject.componentName + "'");
-                            //$log.debug("Found attribute value '" + attributeValue + "' for attribute '" + attribute + "'");
+                        //when no quotation marks have been found, its probably a number or boolean.
+                        if (firstQuotation == -1 && secondQuotation == -1) {
+                            //ensure, that the user can write "ks.test = abc" or
+                            //"ks.test =abc". The space between equalsign and value 
+                            //would be prettier, but it is not necessary.
+                            var positionAttributeValueStart = line.indexOf("= ");
+
+                            if (positionAttributeValueStart == -1) {
+                                positionAttributeValueStart = line.indexOf("=");
+                            } else {
+                                positionAttributeValueStart += 2;
+                            }
+
+                            if (positionAttributeValueStart == -1) {
+                                positionAttributeValueStart += 1;
+                            }
+                            //end ensurance.
+
+                            if (positionAttributeValueStart != -1) {
+                                attributeValue = line.substring(positionAttributeValueStart);
+                            }
+
+                        }
+
+                        //if an attribute value has been found, apply it.
+                        if (attributeValue != null) {
 
                             //update components option fields
                             //first, find the right option
                             for (var posOpt in compObject.componentOptions) {
 
                                 if (compObject.componentOptions[posOpt].optionName == attribute) {
+                                    //when we find the right option, set the value.
                                     compObject.componentOptions[posOpt].optionValue = attributeValue;
-
-                                    //$log.debug(userComponentMap);
                                 }
                             }
                         }
@@ -150,13 +180,8 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
                 userComponents.push(userComponentMap[pos]);
             }
 
-            if(userComponents.length > 0) {
-            	$log.debug("Updated selectedComponentsService");
-            	$log.debug(userComponents);
-            }
-            
             selectedComponentsService.setComponents(userComponents);
-            
+
         }
     });
 

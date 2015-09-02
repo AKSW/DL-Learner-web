@@ -17,12 +17,8 @@ app.service('selectedComponentsService', function($rootScope, $log) {
         setComponents: function(components) {
            
             selectedComponents = components;
-            
-            if(components.length > 0) {
-            	$log.debug("Sending broadcast. Service Components: ");
-            	$log.debug(components);
-            }
-            
+            //sending broadcast, that the components have changed.
+            //ToolboxCtrl will react on it.
             $rootScope.$broadcast('selectedComponentsChanged', components);
         }
     }

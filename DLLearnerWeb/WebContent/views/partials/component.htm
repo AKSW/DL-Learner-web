@@ -30,7 +30,8 @@
 						<select id="option_selection" ng-model="selectedOption" ng-options="option.optionName for option in getOptionsByComponent(component)"
 							ng-change="onOptionChange(selectedOption, $index)">
 						</select>
-						<img class="component_template" ng-model="imageHelp" id="option_help" src="../views/help.png">
+						<img class="component_template" ng-model="imageHelp" id="option_help" src="../views/help.png"
+							title="{{selectedOption.optionDescription}}">
 						<input id="option_value" ng-model="selectedOptionValue"
 							placeholder="{{selectedOption.optionDefaultValue || 'No default value'}}">
 						<!-- expression for changing input-tag into a checkbox

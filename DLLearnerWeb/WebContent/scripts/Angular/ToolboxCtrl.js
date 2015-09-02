@@ -7,11 +7,8 @@ angular.module('dllearner_frontend').controller('ToolboxCtrl', function($scope, 
     $scope.selectedComponents = selectedComponentsService.getComponents();
 
     $scope.$watch('selectedComponents', function() {
-        $log.debug("noticed changes in selectedComponents");
-        //in case selectedComponents were changed from editor, update toolbox.
-        if ($('.CodeMirror')[0].CodeMirror.hasFocus()) {
-            $scope.selectedComponents = selectedComponentsService.getComponents();
-        } else {
+
+        if (!$('.CodeMirror')[0].CodeMirror.hasFocus()) {
             //in case selectedComponents were changed from toolbox, update editor.
             $scope.insertSelectionIntoEditor();
         }
@@ -20,10 +17,6 @@ angular.module('dllearner_frontend').controller('ToolboxCtrl', function($scope, 
     $scope.$on('selectedComponentsChanged', function(event, newComponents) {
         $scope.selectedComponents = newComponents;
         $scope.$apply();
-        if (newComponents.length > 0) {
-            $log.debug("received broadcast");
-            $log.debug($scope.selectedComponents);
-        }
     });
 
     /**
@@ -115,15 +108,6 @@ angular.module('dllearner_frontend').controller('ToolboxCtrl', function($scope, 
         //get CodeMirror instance
         var confEditor = $('.CodeMirror')[0].CodeMirror;
         var content = "";
-
-        //in case the user is currently writing inside the editor,
-        //dont update the editors content by toolbox's content.
-        if (confEditor.hasFocus()) {
-            $log.debug("avoided editor update");
-            return;
-        } else {
-            $log.debug("Editor has no focus. Updating editor from toolboxes point of view.")
-        }
 
         //Counting the numbers of lines, that will be added.
         //Important for snychro editor->toolbox
