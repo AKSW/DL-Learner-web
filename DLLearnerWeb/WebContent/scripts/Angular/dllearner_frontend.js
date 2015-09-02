@@ -3,6 +3,7 @@
  */
 var app = angular.module('dllearner_frontend', []);
 
+//Storing components, the user selected.
 app.service('selectedComponents', function() {
 	var selectedComponents = [];
 
@@ -12,6 +13,20 @@ app.service('selectedComponents', function() {
 		},
 		addComponent : function(component) {
 			selectedComponents.push(component);
+		}
+	}
+});
+
+//Storing all avaiable components.
+app.service('componentsService', function() {
+	var components = [];
+
+	return {
+		getComponents: function() {
+			return components;
+		},
+		addComponent: function(component) {
+			components.push(component);
 		}
 	}
 });

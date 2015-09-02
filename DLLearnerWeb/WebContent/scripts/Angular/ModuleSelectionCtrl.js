@@ -1,5 +1,5 @@
 angular.module('dllearner_frontend').controller('ModuleSelectionCtrl', 
-	function($scope, $http, $log, selectedComponents, ComponentFactory, ComponentOptionsFactory) {
+	function($scope, $http, $log, selectedComponents, componentsService, ComponentFactory, ComponentOptionsFactory) {
 
 	testStuff(selectedComponents, ComponentFactory, ComponentOptionsFactory);
 
@@ -10,6 +10,17 @@ angular.module('dllearner_frontend').controller('ModuleSelectionCtrl',
 	$http.get("../rest/modules").success(function(data) {
 		$scope.modules = data;
 		
+		//in order to make all components avaiable for other controller (e.g. AreaCtrl, which parses editor into toolbox)
+		//we'll push all components into the service 'componentsService'
+		for(var pos in $scope.modules) {
+			var currentModulesComponents = $scope.modules[pos].moduleComponents;
+			
+			for(var posComp in currentModulesComponents) {
+				var currentComponent = currentModulesComponents[posComp];
+
+				componentsService.addComponent(currentComponent);
+			}
+		}
 	});
 
 	//toggle view of module canvas
