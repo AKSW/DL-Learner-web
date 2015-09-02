@@ -1,4 +1,4 @@
-angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $log, selectedComponents, componentsService) {
+angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $log, selectedComponentsService, componentsService) {
 
     // get textarea for configurations
     var configTextarea = document.getElementById("config_textarea");
@@ -41,6 +41,7 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
             for (var pos in lines) {
                 var line = lines[pos];
 
+                //TODO Relict?
                 var tempComponent = null;
 
                 //#################
@@ -67,7 +68,10 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
                             var usersCompType = line.substring(firstQuotation + 1, secondQuotation);
                             //if the users component type was found
                             if (compType == usersCompType) {
+                                //apply the variable name.
+                                currentComponent.componentVariable = prefix;
                                 tempComponent = currentComponent;
+
                                 userComponentMap[prefix] = currentComponent;
                             }
                         }
@@ -121,12 +125,38 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
                         if (firstQuotation != -1 && secondQuotation != -1) {
                             var attributeValue = line.substring(firstQuotation + 1, secondQuotation);
 
-                            $log.debug("For component '" + compObject.componentName + "'");
-                            $log.debug("Found attribute value '" + attributeValue + "' for attribute '" + attribute + "'");
+                            //$log.debug("For component '" + compObject.componentName + "'");
+                            //$log.debug("Found attribute value '" + attributeValue + "' for attribute '" + attribute + "'");
+
+                            //update components option fields
+                            //first, find the right option
+                            for (var posOpt in compObject.componentOptions) {
+
+                                if (compObject.componentOptions[posOpt].optionName == attribute) {
+                                    compObject.componentOptions[posOpt].optionValue = attributeValue;
+
+                                    //$log.debug(userComponentMap);
+                                }
+                            }
                         }
                     }
                 }
             }
+
+            //asdasd
+            var userComponents = [];
+
+            for (var pos in userComponentMap) {
+                userComponents.push(userComponentMap[pos]);
+            }
+
+            if(userComponents.length > 0) {
+            	$log.debug("Updated selectedComponentsService");
+            	$log.debug(userComponents);
+            }
+            
+            selectedComponentsService.setComponents(userComponents);
+            
         }
     });
 
