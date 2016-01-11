@@ -1,24 +1,22 @@
 package org.watte;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.StringReader;
 import java.util.ArrayList;
 
-import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 
 import org.dllearner.cli.DocumentationGenerator;
-
-import com.google.gson.Gson;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.watte.datamodel.*;
+import org.watte.datamodel.Component;
+import org.watte.datamodel.Module;
+import org.watte.datamodel.Option;
+
+import com.google.gson.Gson;
 
 /**
  * This class will handle the request for a JSON formated list of avaiable modules/components.
@@ -33,23 +31,23 @@ public class RetrieveModules {
 	private static Logger logger = LoggerFactory.getLogger(RetrieveModules.class);
 	
 	@GET
-	@Produces(MediaType.APPLICATION_JSON) 
+	@Produces(MediaType.APPLICATION_JSON)
 	public String getDocumentation() {
 		
 		//Initialize the DocumentGenerator from org.dllearner.cli
-		//DocumentationGenerator docGenerator = new DocumentationGenerator();
+		DocumentationGenerator docGenerator = new DocumentationGenerator();
 		
 		//parse the document.
-		ArrayList<Module> modules = readDummyDocumentation();
-		//ArrayList<Module> modules = parseDocumentation(docGenerator.getConfigDocumentationString());
-		
+		//ArrayList<Module> modules = readDummyDocumentation();
+		ArrayList<Module> modules = parseDocumentation(docGenerator.getConfigDocumentationString());
+
 		Gson gson = new Gson();
 		
 		return gson.toJson(modules);
 	}
 	
 	/**
-	 * This method handles the document parsing. 
+	 * This method handles the document parsing.
 	 * It will return an ArrayList of Module-Objects, containing meta informations and option objects.
 	 * @param document
 	 * @return
@@ -61,7 +59,7 @@ public class RetrieveModules {
 		StringReader stringReader = new StringReader(document);
         BufferedReader br;
         //gets true once a new component is reached.
-        //the term "conf file usage" appears twice. once in an option, 
+        //the term "conf file usage" appears twice. once in an option,
         //once for a component. this boolean states at which state of parsing
         //we are.
         boolean componentUsageIncoming = false;
