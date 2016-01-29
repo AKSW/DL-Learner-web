@@ -41,7 +41,7 @@ public class RetrieveModules {
 		
 		//parse the document.
 		ArrayList<Module> modules = readDummyDocumentation();
-		//ArrayList<Module> modules = parseDocumentation(docGenerator.getConfigDocumentationString());
+		//modules = parseDocumentation(docGenerator.getConfigDocumentationString());
 		
 		Gson gson = new Gson();
 		

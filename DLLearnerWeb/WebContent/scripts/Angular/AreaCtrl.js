@@ -15,9 +15,13 @@ angular.module('dllearner_frontend').controller('AreaCtrl', function($scope, $lo
         scrollbarStyle: 'simple',
         //prevent CodeMirrors default Drop-Actions
         dragDrop: false,
+        //enable autocomplete.
+        //TODO wirte own hint-logic
+        //extraKeys: {"Ctrl-Space": "autocomplete"},
         pollInterval: 1000
     });
 
+    
     //Handling the synchro from editor to selection 
     cmEditor.on("change", function() {
         if (cmEditor.hasFocus()) {

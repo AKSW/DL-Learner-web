@@ -1,7 +1,7 @@
 angular.module('dllearner_frontend').controller('ModuleSelectionCtrl',
-    function($scope, $http, $log, selectedComponentsService, componentsService, ComponentFactory, ComponentOptionsFactory) {
+    function($scope, $http, $log, selectedComponentsService, componentsService) {
 
-        testStuff(selectedComponentsService, ComponentFactory, ComponentOptionsFactory);
+        testStuff(selectedComponentsService);
 
         $scope.selectedModule = "";
 
@@ -39,7 +39,7 @@ angular.module('dllearner_frontend').controller('ModuleSelectionCtrl',
             //here we have to copy (not refer) the component object.
             //later on, the user can add option values.
             //By leaving the component as refered object, the added values will apply
-            //on a later added component, which is the same as the previously added.
+            //on a later added "same-minded" component, which is the same as the previously added.
             //Obj 1 type A gets a value.
             //User adds Obj 2 type A, Obj 2 has the same values Obj 1 got. This should be prohibited.
             var copyComponent = angular.copy(component);
@@ -50,7 +50,7 @@ angular.module('dllearner_frontend').controller('ModuleSelectionCtrl',
 
 var configurationModel;
 
-function testStuff(selectedComponentsService, ComponentFactory, ComponentOptionsFactory) {
+function testStuff(selectedComponentsService) {
     var components = [];
 
     var object = {

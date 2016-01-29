@@ -1,128 +1,142 @@
 @CHARSET "ISO-8859-1";
-
 .component_template {
-	margin: 5px;
-	background-color: #537CBB;
-	color: white;
-	height: auto;
-	font-size: small;
-	padding-bottom: 5px;
-	max-width: 700px;
+    margin: 5px;
+    background-color: #537CBB;
+    color: white;
+    height: auto;
+    font-size: small;
+    padding-bottom: 5px;
+    max-width: 700px;
 }
 
+
 /* Table holding "Component Name:" and Remove-Button */
+
 .component_template table {
-	margin-bottom: -5px;
-	width: 100%;
-	padding: 0px;
+    margin-bottom: -5px;
+    width: 100%;
+    padding: 0px;
 }
 
 
 /* Right Table Column Header (Remove-BUtton) */
+
 .component_template table #option_remove {
-	float: right;
+    float: right;
 }
+
 
 /* Left Table Colum Header (Component Name:) */
+
 .component_template table #component_name_field {
-	text-decoration: underline;
-	float: left;
-	margin-left: 0px;
+    text-decoration: underline;
+    float: left;
+    margin-left: 0px;
 }
 
+
 /* Actual Component Name {{component.componentName}} */
+
 #component_name {
-/* 	Magical Number so the Component Name will align with the componentName_filed */
-	margin-left: 2px;
+    /* 	Magical Number so the Component Name will align with the componentName_filed */
+    margin-left: 2px;
 }
 
 #component_usage {
-	/* Same magical 2px addition, for alignment */
-	margin-left: 7px;
+    display: inline-block;
+    /* Same magical 2px addition, for alignment */
+    margin-left: 7px;
 }
 
+#component_variable_div {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+
 /* Remove Button for Components */
+
 #component_remove {
-	cursor: pointer;
-	color: red;
-	float: right;
+    cursor: pointer;
+    color: red;
+    float: right;
 }
 
 #component_variable {
-	width: 80px;
+    width: 80px;
 }
 
 .option_selection_table td {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 .option_list_table {
-	text-align: left;
+    text-align: left;
 }
 
-.option_list_table tr{
-	max-width: 263px;
+.option_list_table tr {
+    max-width: 263px;
 }
 
 #remove_option_span {
-	float: right;
+    float: right;
 }
 
 #add_option_span {
-	float: right;
+    float: right;
 }
 
 #option_help {
-	display: inline;
+    display: inline;
 }
 
 #option_selection {
-	display: inline;
-	margin-left: 0px;
-	margin-right: 2px;
-	
+    display: inline;
+    margin-left: 0px;
+    margin-right: 2px;
 }
 
 #option_selection select {
-	display: inline;
-	height: 20px;
+    display: inline;
+    height: 20px;
 }
 
 #option_value {
-	display: inline;
-	margin-left: 2px;
+    display: inline;
+    margin-left: 2px;
 }
 
 #option_value input {
-	display: inline;
-	height: 20px;
+    display: inline;
+    height: 20px;
 }
 
 #option_help {
-	width: 20px;
-	height: 20px;
-	margin-bottom: -5px;
-	padding-bottom: 0px;
-	display: inline;
+    width: 20px;
+    height: 20px;
+    margin-bottom: -5px;
+    padding-bottom: 0px;
+    display: inline;
 }
 
 #option_manipulation {
-	padding-top: 10px;
+    padding-top: 10px;
 }
 
 #remove_option_span {
-	display: inline;
-	float: right;
-	cursor: pointer;
-	color: red;
+    display: inline;
+    float: right;
+    cursor: pointer;
+    color: red;
 }
 
 #add_option_span {
-	cursor: pointer;
-	color: #4CD486;
+    cursor: pointer;
+    color: #4CD486;
 }
 
 #no_options_span {
-	display: inline;
-	margin-left: 0px;
+    display: inline;
+    margin-left: 0px;
 }
