@@ -5,6 +5,12 @@
 	<artifactId>DLLearnerWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+	<properties>
+               <maven.compiler.source>1.7</maven.compiler.source>
+               <maven.compiler.target>1.7</maven.compiler.target>
+               <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+               <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 
 	<!-- DLLearner Repo -->
 	<repositories>
@@ -47,7 +53,7 @@
 		<dependency>
 			<groupId>org.reflections</groupId>
 			<artifactId>reflections</artifactId>
-			<version>0.9.10</version>
+			<version>0.9.9-RC1</version>
 		</dependency>
 
 		<!-- Used for deleting session directories -->
@@ -58,17 +64,51 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>2.22.1</version>
+		</dependency>
+		
+           <dependency>
+               <groupId>javax.servlet</groupId>
+               <artifactId>javax.servlet-api</artifactId>
+               <version>3.1.0</version>
+           </dependency>
+           
+			<dependency>
+				<groupId>xml-apis</groupId>
+				<artifactId>xml-apis</artifactId>
+				<version>1.4.01</version>
+			</dependency>
+           		
 	</dependencies>
 
 	<!-- Added, because maven couldnt find the web.xml -->
 	<build>
 		<plugins>
+<!--Maven Compiler Plugin -->
+                       <plugin>
+                               <groupId>org.apache.maven.plugins</groupId>
+                               <artifactId>maven-compiler-plugin</artifactId>
+                               <version>3.3</version>
+                               <configuration>
+                                       <source>${maven.compiler.source}</source>
+                                       <target>${maven.compiler.target}</target>
+                                       <encoding>${project.build.sourceEncoding}</encoding>
+                               </configuration>
+                       </plugin>
+			<plugin>
+ 				<groupId>org.eclipse.jetty</groupId>
+ 				<artifactId>jetty-maven-plugin</artifactId>
+ 				<version>9.3.7.RC0</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<webXml>WebContent\WEB-INF\web.xml</webXml>
-				</configuration>
+<!-- 				<configuration> -->
+<!-- 					<webXml>WebContent\WEB-INF\web.xml</webXml> -->
+<!-- 				</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
