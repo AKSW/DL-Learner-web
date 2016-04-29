@@ -18,33 +18,49 @@ import org.watte.datamodel.Option;
 
 import com.google.gson.Gson;
 
-/**
- * This class will handle the request for a JSON formated list of avaiable modules/components.
- * Once DLLearner created the documentation, it will be parsed, converted into an object oriented structure
- * and returned as JSON.
- * @author Watte
- *
- */
-@Path("/modules")
-public class RetrieveModules {
 
-	private static Logger logger = LoggerFactory.getLogger(RetrieveModules.class);
+@Path("/modules")
+public class ModuleHandler {
+
+	private static Logger logger = LoggerFactory.getLogger(ModuleHandler.class);
 	
+	public ArrayList<Module> modules;
+	public String modulesJSON;
+
+	public ModuleHandler() {
+		logger.debug("Constructor MOduleHandler");
+		DocumentationGenerator docGenerator = new DocumentationGenerator();
+
+		modules = parseDocumentation(docGenerator.getConfigDocumentationString());
+
+		Gson gson = new Gson();
+
+		modulesJSON = gson.toJson(modules);
+	}
+
+	/**
+	 * This function gets called by GET requests.
+	 * It generates the DLLearner documentation by calling <code>DocumentationGenerator().getConfigDocumentationString()</code>.
+	 * This documentation gets converted into a JSON by Google's Gson package and will be returned.
+	 * @return String JSON-encoded Module presentation
+	 */
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getDocumentation() {
+	public String getModules() {
 		
 		//Initialize the DocumentGenerator from org.dllearner.cli
-		DocumentationGenerator docGenerator = new DocumentationGenerator();
+		//DocumentationGenerator docGenerator = new DocumentationGenerator();
 		
 		//parse the document.
 
 		//ArrayList<Module> modules = readDummyDocumentation();
-		ArrayList<Module> modules = parseDocumentation(docGenerator.getConfigDocumentationString());
+		//ArrayList<Module> modules = parseDocumentation(docGenerator.getConfigDocumentationString());
 
-		Gson gson = new Gson();
+		//Gson gson = new Gson();
 		
-		return gson.toJson(modules);
+		//return gson.toJson(modules);
+		
+		return modulesJSON;
 	}
 	
 	/**
@@ -149,35 +165,5 @@ public class RetrieveModules {
         }
         
         return modules;
-	}
-	
-	/**
-	 * Method exist for testing purposes.
-	 */
-	private ArrayList<Module> readDummyDocumentation() {
-		
-		FileReader fr;
-		BufferedReader br;
-		
-		String document = "";
-		String line = "";
-		try {
-			fr = new FileReader("D:\\documentation.dat");
-			br = new BufferedReader(fr);
-			
-			while( (line = br.readLine()) != null) {
-				document += line + "\n";
-			}
-			
-			br.close();
-			
-		} catch(Exception ex) {
-			logger.error("Error on reading dummy documentation", ex);
-		} finally {
-			
-		}
-		
-		return parseDocumentation(document);
-		
 	}
 }

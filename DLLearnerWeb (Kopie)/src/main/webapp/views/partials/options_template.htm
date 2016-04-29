@@ -1,0 +1,13 @@
+<tr>
+	<td><select id="option_selection" ng-model="selectedOption" ng-options="option.optionName for option in component.componentOptions"
+		ng-change="onOptionChange(selectedOption, $index)" ng-show="component.componentOptions.length > 0"></select> <img class="component_template" id="option_help"
+		src="../../views/help.png" ng-show="component.componentOptions.length > 0"> <input id="option_value" ng-attr-type="{{optionType[$index]}}"
+		placeholder="value" ng-show="component.componentOptions.length > 0"> <span class="component_template" id="no_options_span"
+		ng-show="!component.componentOptions.length > 0"> No options avaiable. </span></td>
+	<td>
+		<div id="option_manipulation" ng-show="component.componentOptions.length > 0">
+			<span class="component_template" id="remove_option_span" ng-click="removeOption($index)">Remove Option</span> <span class="component_template"
+				id="add_option_span" ng-click="addOption(this)">Add</span>
+		</div>
+	</td>
+</tr>

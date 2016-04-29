@@ -1,0 +1,48 @@
+/*----- Tabs -----*/
+.tabs {
+    display: inline-block;
+	width: 700px;
+	background-color: #0b479d;
+	margin: 0;
+	padding: 0;
+}
+
+.tabItems {
+	
+}
+
+.tabItems ul{
+	display: inline-block;
+	padding: 0;
+	margin: 5px;
+}
+
+.tabItems li {
+	display: inline;
+    float: left;
+    list-style: none;
+    padding: 10px 10px;
+    color: white;	
+    cursor: pointer;	
+}
+
+.tabItems li:hover {
+	background-color: #3B6BB0;
+}
+
+
+li.active {
+	background-color: #fff;
+	color: #000;
+}
+
+li.active:hover {
+	background-color: #3B6BB0;
+	color: #fff;
+}
+
+.tabContent {
+	display: block;
+	margin: 5px;
+}
+

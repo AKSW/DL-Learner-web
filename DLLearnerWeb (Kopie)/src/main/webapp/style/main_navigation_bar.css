@@ -1,0 +1,94 @@
+@CHARSET "ISO-8859-1";
+/* ### BEGIN NAVIGATION BAR ### */
+/* Dropdown Menu */
+.navigation_bar {
+	margin-left: 20px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.navigation_bar ul ul {
+	display: none;
+}
+
+.navigation_bar ul li:hover>ul {
+	display: block;
+}
+
+.navigation_bar ul {
+	background: #0b479d;
+	padding: 0px 10px;
+	width: 100%;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	z-index: 10;
+}
+
+.navigation_bar ul:after {
+	/*content: ""; */
+	clear: both;
+	display: block;
+}
+
+/* 
+		<li>'s of main <ul>. Those <li> contain the Main Menu Items names.
+	 */
+.navigation_bar ul li {
+	float: left;
+}
+
+/*	
+		Hover on Main Menu Items
+	 */
+.navigation_bar ul li:hover {
+	background: #3B6BB0;
+}
+
+/* 	Hover on Main Menu Items' Link 
+		(which results in the same actions as on 'nav ul li:hover')
+	 */
+.navigation_bar ul li:hover a {
+	
+}
+
+/* Main Items */
+.navigation_bar ul li a {
+	display: block;
+	padding: 10px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+/* Dropdown Menu of Main Items (outer) */
+.navigation_bar ul ul {
+	background: #3B6BB0;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: auto;
+}
+
+/* Dropdown Menu of Main Items (inner) */
+.navigation_bar ul ul li {
+	float: none;
+	position: relative;
+}
+
+/* Sub Items */
+.navigation_bar ul ul li a {
+	padding: 10px 10px;
+	color: black;
+	text-align: left;
+}
+
+.navigation_bar ul ul li a:hover {
+	text-decoration: underline;
+}
+
+.navigation_bar ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+/* ### END NAVIGATION BAR ### */

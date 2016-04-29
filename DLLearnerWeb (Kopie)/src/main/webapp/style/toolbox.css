@@ -1,0 +1,16 @@
+@CHARSET "ISO-8859-1";
+
+#toolbox_outer_div {
+	display: inline-block;
+	float: left;
+	position: relative;
+	background: #0b479d;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: auto;
+	min-height: 100px;
+	width: 650px;
+	min-width: 500px;
+	z-index: 1;
+}
