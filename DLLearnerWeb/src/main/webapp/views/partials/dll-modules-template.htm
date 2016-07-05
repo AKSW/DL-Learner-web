@@ -1,4 +1,4 @@
-<div id="modules-overlay">
+<div id="modules-overlay" ng-show="visible">
 
     <div class="canvas">
 
@@ -20,5 +20,9 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="close-mark" ng-click="visible = false">
+        <span class="glyphicon glyphicon-remove"></span>
     </div>
 </div>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEI,+CAAoB;EAChB,OAAO,EAAE,GAAG;EACZ,gBAAgB,ECFX,OAAO;EDIR,mEAAY;IACR,KAAK,ECFb,OAAO;IDGC,MAAM,EAAE,OAAO;IACf,WAAW,EAAE,GAAG;EAGxB,qEAAsB;IAClB,UAAU,EAAE,GAAG",
+"sources": ["toolbox.scss","res.scss"],
+"names": [],
+"file": "toolbox.css"
+}

@@ -7,27 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap  -->
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../scripts/bootstrap/css/bootstrap.min.css">
 
     <!-- css -->
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' />
 
     <link rel="stylesheet" href="../style/style.css">
+    <link rel='stylesheet' href="../scripts/lib/CodeMirror/addon/scroll/simplescrollbars.css">
+    <link rel='stylesheet' href="../scripts/lib/CodeMirror/lib/codemirror.css">
+    <link rel="stylesheet" href="../scripts/lib/CodeMirror/addon/hint/show-hint.css">
 </head>
 
-<body>
+<body ng-controller="DLLearnerCtrl">
     <div class="header">
         <h1 class="text-center">DL-Learner</h1>
         <div class="container-fluid navbar-canvas">
             <nav class="navigation_bar">
-                <!-- ng-controller="NavigationCtrl"> -->
                 <ul>
                     <li>
                         <a href="#">Configuration</a>
                         <ul>
-                            <li>
-                                <a href="#" ng-click="toggleToolbox()">Toggle Toolbox</a>
-                            </li>
                             <li>
                                 <a href="#" ng-click="toggleModuleView()">Add Module</a>
                             </li>
@@ -52,12 +51,38 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container page-content">
         <div class="row">
-            <div class="col-xs-12 col-sm-6" ng-controller="ToolboxCtrl">
-                <div ng-include="'../views/partials/componentsTemplate.htm'"></div>
+            <div class="col-sm-12 col-md-6">
+
+                <div class="box">
+                    <!-- <div ng-include="'../views/partials/componentsTemplate.htm'"></div> -->
+                    <dll-toolbox></dll-toolbox>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-sm-12 col-md-6">
+                <div class="box">
+                    <div class="tabs">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation" class="active">
+                                <a href="" data-target="#configuration" data-toggle="tab">Configuration</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="" data-target="#result" data-toggle="tab">Result</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <div class="tab-pane active" id="configuration">
+                                <dll-editor></dll-editor>
+                            </div>
+
+                            <div class="tab-pane" id="result">
+                                Result
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>

@@ -16,6 +16,10 @@ body {
     padding: 0;
 }
 
+h4 {
+    font-size: 13px;
+}
+
 .header {
     h1 {
         color: $black;
@@ -77,4 +81,13 @@ body {
             }
         }
     }
+}
+
+.page-content {
+    padding-top: 15px;
+}
+
+.box {
+    padding: 5px;
+    background-color: $deep-blue;
 }

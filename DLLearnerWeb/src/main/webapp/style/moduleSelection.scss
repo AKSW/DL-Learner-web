@@ -40,4 +40,10 @@
             overflow-y: auto;
         }
     }
+    .close-mark {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+    }
 }

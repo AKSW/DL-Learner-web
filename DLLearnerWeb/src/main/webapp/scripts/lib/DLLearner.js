@@ -1,23 +1,10 @@
-var app = angular.module("DLLearner", ["AJAXModule", "DLLearnerModules"]);
-app.service("UserComponentsService", ["$log", function($log) {
+var app = angular.module("DLLearner", ["AJAXModule", "DLLearnerModules", "DLLearnerEditor"]);
 
-    var selectedComponents = [];
+app.controller("DLLearnerCtrl", ["$rootScope", "$scope", "$log", function($rootScope, $scope, $log) {
 
+    $scope.toggleModuleView = function() {
 
-    return {
-        getSelectedComponents: function() {
-            return selectedComponents;
-        },
-        addComponent: function(component) {
-            selectedComponents.push(component);
-        },
-        setComponents: function(components) {
-
-            selectedComponents = components;
-            //sending broadcast, that the components have changed.
-            //ToolboxCtrl will react on it.
-            //$rootScope.$broadcast('selectedComponentsChanged', components);
-        }
-    }
+        $rootScope.$broadcast("ToggleModuleView");
+    };
 
 }]);

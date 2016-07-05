@@ -1,0 +1,42 @@
+<div class="selected-components-canvas">
+    <div class="selected-component" ng-repeat="component in selectedComponents track by $index">
+        <h4 class="bold underline no-margin-top">Component Name</h4>
+        <div>{{component.componentName}}</div>
+
+        <div class="df jcsb">
+            <div>
+                <h4 class="no-margin-bottom">Usage:</h4>
+                <div>{{component.componentUsage}}</div>
+            </div>
+            <div>
+                <h4 class="no-margin-bottom">Variable:</h4>
+                <div>
+                    <input type="text" class="form-control" ng-model="component.componentVariable">
+                </div>
+            </div>
+        </div>
+
+        <div class="df jcsb aic margin-top option">
+            <select class="form-control" ng-model="selectedOption" ng-options="option.optionName for option in component.componentOptions"></select>
+
+            <input type="text" ng-model="optionValue" placeholder="{{selectedOption.optionDefaultValue || 'No default value'}}">
+
+            <div class="option-add" ng-click="addOption(selectedOption, optionValue)">Add</div>
+        </div>
+
+        <table class="table">
+            <tr>
+                <th>Option Name</th>
+                <th>Description</th>
+                <th>Option Value</th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="option in getOptions(component)">
+                <td>{{option.optionName}}</td>
+                <td>{{option.optionDescription}}</td>
+                <td>{{option.optionValue}}</td>
+                <td>Remove</td>
+            </tr>
+        </table>
+    </div>
+</div>

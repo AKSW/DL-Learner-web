@@ -8,15 +8,17 @@ module.exports = function(grunt) {
 
     var dllearnerSrc = [
         "scripts/jquery/jquery-1.12.3.min.js",
+        "scripts/bootstrap/js/bootstrap.min.js",
+        "scripts/lib/CodeMirror/lib/codemirror.js",
+        "scripts/lib/CodeMirror/addon/scroll/simplescrollbars.js",
+        "scripts/lib/CodeMirror/mode/xml/xml.js",
+        "scripts/lib/CodeMirror/mode/ebnf/ebnf.js",
         "scripts/angular/angular.min.js",
         "scripts/lib/AJAXModule.js",
         "scripts/lib/DLLearnerModules.js",
+        "scripts/lib/Editor.js",
         "scripts/lib/DLLearner.js",
-        "scripts/lib/ToolboxCtrl.js",
-        "scripts/lib/CodeMirror/lib/codemirror.js",
-        "scripts/lib/CodeMirror/mode/ebnf/ebnf.js",
-        "scripts/lib/CodeMirror/mode/xml/xml.js",
-        "scripts/lib/CodeMirror/addon/scroll/simplescrollbars.js"
+        "scripts/lib/Toolbox.js",
     ];
     var dllearnerDest = "./build/" + concatName;
 

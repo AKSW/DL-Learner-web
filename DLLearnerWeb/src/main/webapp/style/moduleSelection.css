@@ -30,5 +30,10 @@
     #modules-overlay .canvas .components-canvas {
       max-height: 75vh;
       overflow-y: auto; }
+  #modules-overlay .close-mark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
 
 /*# sourceMappingURL=moduleSelection.css.map */

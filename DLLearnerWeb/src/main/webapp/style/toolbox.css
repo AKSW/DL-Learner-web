@@ -1,0 +1,11 @@
+.selected-components-canvas .selected-component {
+  padding: 5px;
+  background-color: #537CBB; }
+  .selected-components-canvas .selected-component .option .option-add {
+    color: #4CD486;
+    cursor: pointer;
+    font-weight: 600; }
+  .selected-components-canvas .selected-component + .selected-component {
+    margin-top: 5px; }
+
+/*# sourceMappingURL=toolbox.css.map */

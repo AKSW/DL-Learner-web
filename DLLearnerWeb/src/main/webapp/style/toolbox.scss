@@ -1,0 +1,17 @@
+@import "res";
+.selected-components-canvas {
+    .selected-component {
+        padding: 5px;
+        background-color: $light-blue;
+        .option {
+            .option-add {
+                color: $green;
+                cursor: pointer;
+                font-weight: 600;
+            }
+        }
+        + .selected-component {
+            margin-top: 5px;
+        }
+    }
+}

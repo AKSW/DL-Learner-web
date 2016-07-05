@@ -1,0 +1,50 @@
+@import "res";
+.bold {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.df {
+    display: flex;
+    &.jcsb {
+        justify-content: space-between;
+    }
+    &.jcsa {
+        justify-content: space-around;
+    }
+    &.aic {
+        align-items: center;
+    }
+}
+
+input {
+    color: $black;
+    padding: 2px;
+}
+
+.form-control {
+    padding: 3px 6px;
+    font-size: 12px;
+    line-height: 1.2;
+    height: auto;
+    width: auto;
+}

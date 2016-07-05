@@ -14,6 +14,9 @@ body {
   margin: 0;
   padding: 0; }
 
+h4 {
+  font-size: 13px; }
+
 .header h1 {
   color: #2a2a2a; }
 .header .container-fluid.navbar-canvas {
@@ -61,6 +64,13 @@ body {
           .header .container-fluid.navbar-canvas .navigation_bar ul li a:hover {
             background-color: #537CBB; }
 
+.page-content {
+  padding-top: 15px; }
+
+.box {
+  padding: 5px;
+  background-color: #0B479D; }
+
 #modules-overlay {
   position: fixed;
   top: 0;
@@ -93,5 +103,58 @@ body {
     #modules-overlay .canvas .components-canvas {
       max-height: 75vh;
       overflow-y: auto; }
+  #modules-overlay .close-mark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
+
+.selected-components-canvas .selected-component {
+  padding: 5px;
+  background-color: #537CBB; }
+  .selected-components-canvas .selected-component .option .option-add {
+    color: #4CD486;
+    cursor: pointer;
+    font-weight: 600; }
+  .selected-components-canvas .selected-component + .selected-component {
+    margin-top: 5px; }
+
+.bold {
+  font-weight: 600; }
+
+.underline {
+  text-decoration: underline; }
+
+.margin-top {
+  margin-top: 10px; }
+
+.no-margin-top {
+  margin-top: 0; }
+
+.no-margin-bottom {
+  margin-bottom: 0; }
+
+.inline {
+  display: inline-block; }
+
+.df {
+  display: flex; }
+  .df.jcsb {
+    justify-content: space-between; }
+  .df.jcsa {
+    justify-content: space-around; }
+  .df.aic {
+    align-items: center; }
+
+input {
+  color: #2a2a2a;
+  padding: 2px; }
+
+.form-control {
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 1.2;
+  height: auto;
+  width: auto; }
 
 /*# sourceMappingURL=style.css.map */
