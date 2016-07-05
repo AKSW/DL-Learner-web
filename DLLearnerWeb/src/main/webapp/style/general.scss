@@ -1,0 +1,80 @@
+@import "res";
+body {
+    font-family: 'Oxygen';
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    background-color: $bright-blue;
+    background-image: url('http://dl-learner.org/Images/Fotolia_bright_invers_blau_schmal5.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    h1 {
+        color: $black;
+    }
+    .container-fluid.navbar-canvas {
+        background-color: $blue;
+        .navigation_bar {
+            text-align: center;
+            //Quite strange margin bug
+            margin-bottom: -3px;
+            ul {
+                width: 100%;
+                list-style: none;
+                position: relative;
+                display: inline-table;
+                z-index: 10;
+                margin: 0px;
+                padding: 0px;
+                &:after {
+                    clear: both;
+                    display: block;
+                }
+                ul {
+                    display: none;
+                    background: $blue;
+                    padding: 0;
+                    position: absolute;
+                    top: 100%;
+                    width: auto;
+                    li {
+                        font-size: 13px;
+                        float: none;
+                        position: relative;
+                        a {
+                            color: #fff;
+                            text-align: left;
+                        }
+                    }
+                }
+                li {
+                    font-size: 14px;
+                    float: left;
+                    &:hover {
+                        background: $blue;
+                        > ul {
+                            display: block;
+                        }
+                    }
+                    a {
+                        display: block;
+                        color: #fff;
+                        text-decoration: none;
+                        padding: 5px 10px;
+                        &:hover {
+                            background-color: $light-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

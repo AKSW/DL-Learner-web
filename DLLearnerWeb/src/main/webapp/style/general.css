@@ -1,0 +1,64 @@
+body {
+  font-family: 'Oxygen';
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  background-color: #e2ecf5;
+  background-image: url("http://dl-learner.org/Images/Fotolia_bright_invers_blau_schmal5.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0; }
+
+.header h1 {
+  color: #2a2a2a; }
+.header .container-fluid.navbar-canvas {
+  background-color: #3B6BB0; }
+  .header .container-fluid.navbar-canvas .navigation_bar {
+    text-align: center;
+    margin-bottom: -3px; }
+    .header .container-fluid.navbar-canvas .navigation_bar ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      display: inline-table;
+      z-index: 10;
+      margin: 0px;
+      padding: 0px; }
+      .header .container-fluid.navbar-canvas .navigation_bar ul:after {
+        clear: both;
+        display: block; }
+      .header .container-fluid.navbar-canvas .navigation_bar ul ul {
+        display: none;
+        background: #3B6BB0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: auto; }
+        .header .container-fluid.navbar-canvas .navigation_bar ul ul li {
+          font-size: 13px;
+          float: none;
+          position: relative; }
+          .header .container-fluid.navbar-canvas .navigation_bar ul ul li a {
+            color: #fff;
+            text-align: left; }
+      .header .container-fluid.navbar-canvas .navigation_bar ul li {
+        font-size: 14px;
+        float: left; }
+        .header .container-fluid.navbar-canvas .navigation_bar ul li:hover {
+          background: #3B6BB0; }
+          .header .container-fluid.navbar-canvas .navigation_bar ul li:hover > ul {
+            display: block; }
+        .header .container-fluid.navbar-canvas .navigation_bar ul li a {
+          display: block;
+          color: #fff;
+          text-decoration: none;
+          padding: 5px 10px; }
+          .header .container-fluid.navbar-canvas .navigation_bar ul li a:hover {
+            background-color: #537CBB; }
+
+/*# sourceMappingURL=general.css.map */

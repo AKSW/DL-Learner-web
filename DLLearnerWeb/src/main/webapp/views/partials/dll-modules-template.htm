@@ -1,0 +1,24 @@
+<div id="modules-overlay">
+
+    <div class="canvas">
+
+        <div class="modules">
+            <h3>Modules</h3>
+
+            <div class="modules-canvas">
+                <div class="module" ng-repeat="module in Modules" ng-click="onClickModule(module)" ng-clasS="{'selected': selectedModule == module}">
+                    {{module.moduleName}}
+                </div>
+            </div>
+        </div>
+        <div class="components">
+            <h3>Components <span class="decent">of {{selectedModule.moduleName}}</h3>
+
+            <div class="components-canvas">
+                <div class="component" ng-repeat="component in selectedModule.moduleComponents" ng-click="onClickComponent(component)">
+                    {{component.componentName}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
