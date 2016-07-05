@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="DLLearner">
+
+<head>
+    <meta charset="utf8">
+    <title>DL-Learner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+
+    <!-- css -->
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C400italic%2C700italic%7COxygen%3A300%2C400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' />
+
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="text-center">DL-Learner</h1>
+        <div class="container-fluid navbar-canvas">
+            <nav class="navigation_bar">
+                <!-- ng-controller="NavigationCtrl"> -->
+                <ul>
+                    <li>
+                        <a href="#">Configuration</a>
+                        <ul>
+                            <li>
+                                <a href="#" ng-click="toggleToolbox()">Toggle Toolbox</a>
+                            </li>
+                            <li>
+                                <a href="#" ng-click="toggleModuleView()">Add Module</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Load Examples</a>
+                        <ul>
+                            <li>
+                                <a href="#" ng-click="loadFatherExample()">Father (OWL File)</a>
+                            </li>
+                            <li>
+                                <a href="#" ng-click="foo()">Stuff</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onClick="callDLL()">Submit configuration</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6" ng-controller="ToolboxCtrl">
+                <div ng-include="'../views/partials/componentsTemplate.htm'"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+
+            </div>
+        </div>
+    </div>
+
+    <dll-modules></dll-modules>
+
+    <script src="../build/DLLearner-0.1.0.js"></script>
+</body>
+
+</html>

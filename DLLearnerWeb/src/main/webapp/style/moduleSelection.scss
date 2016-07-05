@@ -1,0 +1,43 @@
+@import "res";
+#modules-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    .canvas {
+        margin-top: 100px;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: flex-start;
+        h3 {
+            margin-bottom: 20px;
+        }
+        .module,
+        .component {
+            background-color: $blue;
+            margin: 10px;
+            margin-left: 0px;
+            padding: 5px 10px;
+            cursor: pointer;
+            &:hover,
+            &.selected {
+                outline: #0b479D 2px solid;
+            }
+            &.selected {
+                &:after {}
+            }
+        }
+        .modules {
+            margin-right: 50px;
+        }
+        .components {}
+        .modules-canvas,
+        .components-canvas {
+            max-height: 75vh;
+            overflow-y: auto;
+        }
+    }
+}

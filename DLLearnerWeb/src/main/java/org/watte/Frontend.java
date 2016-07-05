@@ -35,7 +35,7 @@ public class Frontend {
 		if(!errorLog.exists())
 			errorLog.getParentFile().mkdirs();
 		
-		return readHTML("/views/dllearner.html");
+		return readHTML("/views/index.html");
 	}
 	
 	/**

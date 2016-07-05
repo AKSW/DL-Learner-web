@@ -1,0 +1,34 @@
+#modules-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10; }
+  #modules-overlay .canvas {
+    margin-top: 100px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start; }
+    #modules-overlay .canvas h3 {
+      margin-bottom: 20px; }
+    #modules-overlay .canvas .module,
+    #modules-overlay .canvas .component {
+      background-color: #3B6BB0;
+      margin: 10px;
+      margin-left: 0px;
+      padding: 5px 10px;
+      cursor: pointer; }
+      #modules-overlay .canvas .module:hover, #modules-overlay .canvas .module.selected,
+      #modules-overlay .canvas .component:hover,
+      #modules-overlay .canvas .component.selected {
+        outline: #0b479D 2px solid; }
+    #modules-overlay .canvas .modules {
+      margin-right: 50px; }
+    #modules-overlay .canvas .modules-canvas,
+    #modules-overlay .canvas .components-canvas {
+      max-height: 75vh;
+      overflow-y: auto; }
+
+/*# sourceMappingURL=moduleSelection.css.map */
