@@ -1,4 +1,4 @@
-var app = angular.module("DLLearner", ["AJAXModule", "DLLearnerModules", "DLLearnerEditor"]);
+var app = angular.module("DLLearner", ["AJAXModule", "dllModules", "dllEditor"]);
 
 app.controller("DLLearnerCtrl", ["$rootScope", "$scope", "$log", function($rootScope, $scope, $log) {
 

@@ -15,8 +15,8 @@ module.exports = function(grunt) {
         "scripts/lib/CodeMirror/mode/ebnf/ebnf.js",
         "scripts/angular/angular.min.js",
         "scripts/lib/AJAXModule.js",
-        "scripts/lib/DLLearnerModules.js",
-        "scripts/lib/Editor.js",
+        "scripts/lib/DLLearnerModules/DLLearnerModules.js",
+        "scripts/lib/Editor/DLLearnerEditor.js",
         "scripts/lib/DLLearner.js",
         "scripts/lib/Toolbox.js",
     ];

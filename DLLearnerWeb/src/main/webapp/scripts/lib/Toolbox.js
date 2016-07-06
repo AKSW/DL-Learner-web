@@ -1,110 +1,64 @@
 var app = angular.module("DLLearner");
 
+/**
+ * This directive handles the made component selection and supports the addition of options for each component.
+ */
 app.directive("dllToolbox", [function() {
 
     var controller = ["$scope", "$log", "UserComponentsService", function($scope, $log, UCS) {
 
-        //Array of components the user selcted
-        $scope.selectedComponents = UCS.getSelectedComponents();
+        /*
+            This array holds the current selection of components.
+         */
+        $scope.selectedComponents = [];
 
-        $scope.addOption = function(option, value) {
+        /**
+         * When the user selects a component from the module selection,
+         * the UserComponentService (UCS) gets notified. The UCS therefor 
+         * notifies the dllToolbox controller, that there exists a new component
+         * in the user's selection.
+         */
+        UCS.onNewComponent(function(component) {
 
-            if (!option) return;
+            $scope.selectedComponents.push(component);
+        });
 
-            if (!value) {
-                if (option.optionDefaultValue) option.optionValue = option.optionDefaultValue;
-                else return;
-            } else {
-                option.optionValue = value;
-            }
-        };
+        /**
+         * When the user wants to load an example, multiple components
+         * are part of it. Instead of notifiying this controller n times for n components
+         * in the example, this controller has a callback for a complete new selection of
+         * components.
+         * 
+         * @param  {Array}  components  A list of component objects. 
+         */
+        UCS.onNewComponents(function(components) {
 
-        $scope.getOptions = function(component) {
+            $scope.selectedComponents = components;
+        });
 
-            var out = [];
-            for (var pos in component.componentOptions) {
-                var cur = component.componentOptions[pos];
 
-                if (cur.optionValue !== undefined) out.push(cur);
-            }
+        /**
+         * Function for removal of a component.
+         * Gets called when the user clicks on 'remove component'.
+         * 
+         * @param  {object} component A component repeated by ng-repeat.
+         * @param  {number} index     The index of this component.
+         */
+        $scope.removeComponent = function(component, index) {
 
-            return out;
+            $scope.selectedComponents.splice(index, 1);
+            UCS.removeComponent(component);
         };
 
         /**
-         * Function returns the components config-file usage, as documented in the documentation.
-         * Without the default prefix.
+         * Function for addition of an option value / parameter.
+         * Gets called when the user clicks on 'add option'.    
+         * @param {Object}                  option      Option-Object from ng-options (<select>)
+         * @param {string|number|boolean}   optionValue Value the option should have. 
          */
-        var extractComponentUsage = function(component) {
-            var componentUsage = component.componentUsage;
+        $scope.addOption = function(option, optionValue) {
 
-            return componentUsage.substring(componentUsage.indexOf("."));
         };
-
-        /**
-         * Function returns the default variable for a component (e.g. ks)
-         */
-        var extractComponentDefaultVariable = function(component) {
-            var prefix = component.componentUsage.substring(0, component.componentUsage.indexOf("."));
-            return prefix;
-        };
-
-        $scope.insertSelectionIntoEditor = function() {
-
-            //get CodeMirror instance
-            var confEditor = $('.CodeMirror')[0].CodeMirror;
-            var content = "";
-
-            //Counting the numbers of lines, that will be added.
-            //Important for snychro editor->toolbox
-            var lineCount = 0;
-
-            for (var pos in $scope.selectedComponents) {
-                //current component
-                var component = $scope.selectedComponents[pos];
-
-                //apply the components variable name. If no one was set yet, get the default ones.
-                var componentVariable = component.componentVariable;
-                if (typeof(componentVariable) === 'undefined' || componentVariable == '') {
-                    componentVariable = extractComponentDefaultVariable(component);
-                }
-
-                //add the componentVariable and the component usage to the editor
-                content += componentVariable + extractComponentUsage(component) + "\n";
-                component.lineOccurrence = lineCount;
-                lineCount++;
-
-
-                //selected options of this component
-                var selectedOptions = $scope.getOptions(component);
-
-                for (var posOpt in selectedOptions) {
-                    var option = selectedOptions[posOpt];
-
-                    if (option.optionUsage.indexOf("\"") != -1) {
-                        content += componentVariable + "." + option.optionName + " = \"" + option.optionValue + "\"\n";
-                    } else {
-                        content += componentVariable + "." + option.optionName + " = " + option.optionValue + "\n";
-                    }
-                    option.lineOccurrence = lineCount;
-                    lineCount++;
-                }
-
-                content += "\n\n";
-                lineCount += 2;
-            }
-            //apply the calculated content to the editor
-            confEditor.setValue(content);
-        };
-
-        $scope.$watch('selectedComponents', function() {
-
-            if ($('.CodeMirror')[0] && !$('.CodeMirror')[0].CodeMirror.hasFocus()) {
-
-                //in case selectedComponents were changed from toolbox, update editor.
-                $scope.insertSelectionIntoEditor();
-            }
-        }, true);
     }];
 
     return {

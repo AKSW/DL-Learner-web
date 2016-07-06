@@ -9819,123 +9819,224 @@ app.service("AJAXService", ["$log", "$http", function($log, $http) {
     }
 
 }])
-;var app = angular.module("DLLearnerModules", ["AJAXModule"]);
+;var app = angular.module("dllModules", ["AJAXModule"]);
 //UCS only for debug
-app.service("ModulesService", ["$log", "AJAXService", "UserComponentsService", function($log, AJAXService, UCS) {
+app.service("ModulesService", ["$log", "AJAXService", function($log, AJAXService) {
 
+    /*
+        A list of avaiable modules.
+     */
     var Modules = [];
-    var Components = [];
-    var ajaxFinished = false;
-    var subscribers = [];
 
-    var notifySubscribers = function() {
-        for (var pos in subscribers) {
-            subscribers[pos]({
+    /*
+        A list of avaiable components.
+     */
+    var Components = [];
+
+    /*
+        Inidicator if the request for avaiable modules has finished yet. Used for 'getModules'
+     */
+    var ajaxFinished = false;
+
+    /*
+        A list of callbacks to be executed when the request has finished.
+     */
+    var callbackQueue = [];
+
+
+    var processQueue = function() {
+        for (var pos in callbackQueue) {
+            callbackQueue[pos]({
                 modules: Modules,
                 components: Components
             });
         }
-    }
+    };
 
-    //retrieve config possibilities coded as json.
+    /*
+        Execute an AJAX to retrieve the avaiable modules.
+        Here each module and each component will get an ID.
+     */
     AJAXService.performAjax("/modules", "GET", "", function(response) {
-        $log.debug(response);
-        Modules = response.data;
 
-        for (var module in Modules) {
-            var curModule = Modules[module];
+        //ids for modules and components.
+        var moduleID = 1;
+        var componentID = 1;
+
+        for (var module in response.data) {
+            var curModule = response.data[module];
+            curModule.id = moduleID;
+
             for (var comp in curModule.moduleComponents) {
+                var curComp = curModule.moduleComponents[comp];
+                curComp.id = componentID;
+                curComp.moduleID = moduleID;
+
                 Components.push(curModule.moduleComponents[comp]);
+                componentID++;
             }
+
+            moduleID++;
         }
 
-        // UCS.addComponent(Components[0]);
+        Modules = response.data;
+        $log.debug(Modules);
 
         ajaxFinished = true;
-        notifySubscribers();
+        processQueue();
 
     }, function(err) {});
 
     return {
-        getModules: function() {
-            return Modules;
-        },
-        getComponents: function() {
-            return Components;
-        },
-        getData: function(cb) {
-            if (ajaxFinished) {
-                subscribers.push(cb);
-                cb({
-                    modules: Modules,
-                    components: Components
-                });
-            } else subscribers.push(cb);
+        getData: function(callback) {
+            if (ajaxFinished) callback({
+                modules: Modules,
+                components: components
+            });
+            else callbackQueue.push(callback);
         }
-    }
+    };
 
 }]);
 
+/**
+ * This service manages the user's selection of components. 
+ * Contrary to the dllToolbox-Ctrl, this service acts as the overarching instance for other controllers and services.
+ * 
+ * @return {function}   onNewComponent      Subscriber-Function for instances that want to be notified, 
+ *                                          when a new component was added.
+ *                                          
+ * @return {function}   onNewComponents     Subscriber-Function for instances that want to be notified, 
+ *                                          when the whole component selection was chagned.  
+ *
+ * @return {function}   addComponent        A function that adds a given component to the internal list of selected components.
+ *
+ * @return {function}   removeComponent     A function that removes a given component from the internal list of selected components.
+ */
 app.service("UserComponentsService", ["$log", function($log) {
 
+    /*
+        A list of components the user has selected.
+     */
     var selectedComponents = [];
-    var subscribers = [];
 
-    var notifySubscribers = function() {
+    /*
+        A list of callbacks that should be executed once a whole new component selection is made.
+        E.g: Loading an example
+     */
+    var onNewComponentsSubscribers = [];
 
-        for (var pos in subscribers) {
-            subscribers[pos](selectedComponents);
+    /*
+        A list of callbacks that should be executed once a new component was added.
+     */
+    var onNewComponentSubscribers = [];
+
+
+    /**
+     * This function executes all saved callbacks for the 'new component added even'.
+     * The argument of these callbacks is the newly added component.
+     * @param  {Object} newComponent A component object.
+     */
+    var notifyNewComponentSubscribers = function(newComponent) {
+        for (var pos in onNewComponentSubscribers) {
+            onNewComponentSubscribers[pos](newComponent);
         }
     };
 
     return {
-        subscribe: function(cb) {
-            subscribers.push(cb);
-            cb(selectedComponents);
+        /**
+         * Subscriber function for callbacks on new component added.
+         * @param  {Function} callback Function to be executed when a new component was added.
+         */
+        onNewComponent: function(callback) {
+
+            onNewComponentSubscribers.push(callback);
         },
-        getSelectedComponents: function() {
-            return selectedComponents;
+        /**
+         * Subscriber function for callbacks on whole new component selection.
+         * @param  {Function} callback Function to be executed when a whole new component selection was made.
+         */
+        onNewComponents: function(callback) {
+
+            onNewComponentsSubscribers.push(callback);
         },
+        /**
+         * This function gets called, when the user clicks on a component in Module-View.
+         * All subscribers for new-component-event will be notified.
+         * @param {Object} component A component object
+         */
         addComponent: function(component) {
-
             selectedComponents.push(component);
-            notifySubscribers();
+            notifyNewComponentSubscribers(component);
         },
-        setComponents: function(components) {
-
-            selectedComponents = components;
-            notifySubscribers();
+        /**
+         * This function gets called, when the user removes a component from the toolbox.
+         * @param  {Object} component A component object
+         */
+        removeComponent: function(component) {
+            var componentIndex;
+            for (var pos in selectedComponents) {
+                if (selectedComponents[pos].id == component.id) componentIndex = pos;
+            }
+            if (componentIndex) selectedComponents.splice(componentIndex, 1);
         }
-    }
+    };
 }]);
 
+/**
+ * This directive shows the user a collection of modules and corresponding components as a page filling overlay.
+ * The user is able to selected a component and add it to his/hers toolbar.
+ */
 app.directive("dllModules", [function() {
 
     var controller = ["$log", "$scope", "ModulesService", "UserComponentsService", function($log, $scope, ModulesService, UCS) {
 
+        /*
+            A list of avaiable modules.
+         */
         $scope.Modules = [];
-        $scope.Components = [];
 
-        $scope.selectedModule;
+        /*
+            A local, temporary variable that states which components of a module to show.
+         */
+        $scope.selectedModule = null;
 
+        /*
+            A variable indicating if the overlay should be visible or not.
+         */
         $scope.visible = false;
 
+
+        /**
+         * Function will set the current module of which the shown components depend.
+         * @param  {Object} module  A module object.
+         */
         $scope.onClickModule = function(module) {
 
             $scope.selectedModule = module;
         };
 
+        /**
+         * Function will add the component to the list of user-selected components in 'UserComponentsService'.
+         * @param  {Object} component A component object.
+         */
         $scope.onClickComponent = function(component) {
 
             UCS.addComponent(angular.copy(component));
         };
 
-
+        /**
+         * Register a callback to get executed when the module-data from the backend has arrived.
+         */
         ModulesService.getData(function(data) {
+
             $scope.Modules = data.modules;
-            $scope.Components = data.components;
         });
 
+        /**
+         * Register a broadcast listener for the 'ToggleModuleView' broadcast.
+         * Will switch the visible state of the overlay.
+         */
         $scope.$on("ToggleModuleView", function(event) {
 
             $scope.visible = !$scope.visible;
@@ -9945,202 +10046,261 @@ app.directive("dllModules", [function() {
     return {
         restrict: 'E',
         scope: {},
-        templateUrl: "../../views/partials/dll-modules-template.htm",
+        templateUrl: "../scripts/lib/DLLearnerModules/dll-modules-template.htm",
         controller: controller
+    };
+
+}]);
+;var app = angular.module("dllEditor", ["dllModules"]);
+
+app.service("EditorService", ["$log", "ModulesService", function($log, ModulesService) {
+
+    /*
+        List of all components.
+     */
+    var Components = [];
+
+    /**
+     * Function will return the short name of a given component.
+     * Currently this is done by using the componentUsage text. But later this should be done by using 
+     * the components shortname, and if this fails, the component actual name.
+     * @param  {Object} component A component object
+     * @return {String}           The name/type/short-name of this component
+     */
+    function extractComponentType(component) {
+        var componentUsage = component.componentUsage;
+        var firstQuotation = componentUsage.indexOf("\"");
+        var secondQuotation = componentUsage.indexOf("\"", firstQuotation + 1);
+
+        var typeDeclaration = componentUsage.substring(firstQuotation + 1, secondQuotation);
+
+        return typeDeclaration;
     }
 
-}])
-;var app = angular.module("DLLearnerEditor", ["DLLearnerModules"]);
+    /**
+     * Function tries to find a component object by a declared .type value.
+     * E.g. ks.type = "KB File" will find the component with name "KB File"
+     * @param  {String} line        A line of the configuration
+     * @return {Object|false}       A component object or false, if no component with this type as name is found.
+     */
+    var getComponentByType = function(line) {
+        // Create a copy of the components-list.
+        var allComponents = angular.copy(Components);
+
+        // Look for the two quotations containing the component.type declaration.
+        var firstQuotation = line.indexOf("\"", line.indexOf(".type"));
+        var secondQuotation = line.indexOf("\"", firstQuotation + 1);
+
+        // If the component type is declared, try to find a corresponding component
+        if (firstQuotation != -1 && secondQuotation != -1) {
+
+            // Iterate through all components
+            for (var posComp in allComponents) {
+                var currentComponent = allComponents[posComp];
+
+                // extract components type-declaration
+                var compType = extractComponentType(currentComponent);
+
+                // extract the components type, the user wrote.
+                var usersCompType = line.substring(firstQuotation + 1, secondQuotation);
+
+                // If the users component type was found, return the found component object.
+                if (compType == usersCompType) return currentComponent;
+            }
+        }
+
+        // When everythings falling apart, false will be returned 
+        return false;
+    };
+
+
+    /**
+     * Function tries to parse an attribute.
+     * E.g. "kb.fileName = 'hans.owl'". Attribute 'fileName' has the value 'hans.owl'.
+     * 
+     * @param  {String} line                A line of the configuration
+     * 
+     * @param  {String} userPrefix          The variable name the user gave this component
+     * 
+     * @return {Object|undefined}           An object containing 'attributeName' and 'attributeValue', or undefined, when no 
+     *                                      attribute could be parsed.
+     */
+    var parseAttribute = function(line, userPrefix) {
+
+        var variableName = userPrefix + ".";
+        var variableNamePosition = line.indexOf(variableName);
+
+        //If we're unable to find the 
+        if (variableNamePosition === -1) return;
+
+        // We'll add the length of variableName, so
+        // it marks the start of attributes name.
+        variableNamePosition += variableName.length;
+
+        // get the index of the end of attribute declaration. 
+        // E.g ks.fileName<HERE> = "father.owl"
+        // OR ks.fileName<HERE>="father.owl"
+        var positionAttributeEnd = line.indexOf(" =");
+        if (positionAttributeEnd == -1) positionAttributeEnd = line.indexOf("=");
+
+        // If the positionAttributeEnd is still -1, the user has not typed it yet.
+        if (positionAttributeEnd == -1) return;
+
+        // storing the user typed attribute name.
+        var attribute;
+        // storing the user typed attribute value
+        var attributeValue;
+
+        // Save the attribute name. So, with 'ks.fileName = "hans"' the attribute will be 'fileName'.
+        attribute = line.substring(variableNamePosition, positionAttributeEnd);
+
+        // If we're unable to parse the attribute name, or the attribute's name is "type", we'll skip.
+        if (!attribute || attribute === "type") return;
+
+        /*
+            Check for attributes value.
+         */
+        var valueStart = line.indexOf("=", positionAttributeEnd) + 1;
+        var valueEnd = line.length;
+
+
+        // When the value is not typed yet, we'll skip.
+        if (valueStart == -1) return;
+
+        // Extract the attributes value. Cut of leading and trailing whitespaces.
+        attributeValue = line.substring(valueStart + 1, valueEnd).trim();
+
+        // If there's no attribute value yet, we'll skip.
+        if (!attributeValue) return;
+
+        //TODO: Remove " or ' from attributeValue
+
+        //When we found an attribute and an attributeValue, the for-loop is
+        //exited by returning an object containing those two values.
+        return {
+            attributeName: attribute,
+            attributeValue: attributeValue
+        };
+
+    };
+
+
+    /**
+     * Function parses the configuration currently present in the editor
+     * and returns a set of components with applied options.
+     * @param  {string} configuration The editor's current text, respectively the configuration.
+     * @return {Array}               List of components
+     */
+    var parseConfiguration = function(configuration) {
+
+        // For easier parsing, the text will be converted into an array.
+        // Each entry stands for a line.
+        var lines = configuration.split("\n");
+        $log.debug(lines);
+
+        // This objects stores the mapping from user-created component-variables
+        // to the corresponding component object.
+        var userComponentMap = {};
+
+        for (var pos in lines) {
+            var line = lines[pos];
+            /*
+                Component Check. 
+                Assuming, every initial component line
+                is declaring the component with '.type'
+             */
+            if (line.indexOf(".type") != -1) {
+                // Extract the variable name, the user gave this component.
+                var prefix = line.substring(0, line.indexOf(".type"));
+
+                // Try to get a component by the users ".type" declaration.
+                // If a component was found, the variable prefix is saved.
+                var component = getComponentByType(line);
+                if (component) {
+                    //TODO: I dont think both are necessary.
+                    component.componentvariable = prefix;
+                    userComponentMap[prefix] = component;
+                }
+            } else {
+                /*
+                    Attribute Check.
+                 */
+                for (var userPrefix in userComponentMap) {
+                    var compObject = userComponentMap[userPrefix];
+                    var attribute = parseAttribute(line, userPrefix);
+
+                    if (!attribute) continue;
+
+                    // Update components option fields.
+                    // First, find the right option
+                    for (var idxOption in compObject.componentOptions) {
+
+                        if (compObject.componentOptions[idxOption].optionName == attribute.attributeName) {
+                            // When we found the right option, set the value.
+                            compObject.componentOptions[idxOption].optionValue = attribute.attributeValue;
+                        }
+                    }
+                }
+            }
+        }
+
+        //asdasd
+        var userComponents = [];
+
+        for (var idx in userComponentMap) {
+            userComponents.push(userComponentMap[idx]);
+        }
+
+        $log.debug(userComponentMap);
+    };
+
+
+    /*
+        Register a callback for when the modules arrived, therefor the components arrived.
+     */
+    ModulesService.getData(function(data) {
+
+        Components = data.components;
+    });
+
+    return {
+        parseConfiguration: parseConfiguration
+    };
+
+}]);
+
+/**
+ * This directive initializes and shows the CodeMirror-Texteditor.
+ */
 app.directive("dllEditor", [function() {
 
-    var controller = ["$scope", "$log", "ModulesService", function($scope, $log, ModulesService) {
+    var controller = ["$scope", "$log", "EditorService", function($scope, $log, EditorService) {
 
-        $log.info("Editor Init");
-
-        var Components = [];
+        /*
+            Variable holds the instance of CodeMirror
+         */
         var cmEditor;
 
         var onChangeCodeMirror = function() {
-            if (!cmEditor.hasFocus()) {
-                $log.warn("No cmEditor onChange because editor is not focused");
-                return;
-            }
+            // Avoid a synchronization from editor to toolbox when the user is 
+            // currently working in the toolbox.
+            if (!cmEditor.hasFocus()) return;
 
-            //avoid having references.
-            var allComponents = angular.copy(Components);
+            // The current content of the editor
+            var configuration = cmEditor.getValue();
 
-            //this objects stores the mapping from user-created component-variables
-            //to the corresponding component object.
-            var userComponentMap = {};
-
-            //get the number of lines inside the editor
-            var lineCount = cmEditor.lineCount();
-            //array for storing the lines in the editor
-            var lines = [];
-            //iterate over the number of lines, retrieve each line
-            //and store it in 'lines'
-            for (var i = 0; i < lineCount; i++) {
-                lines.push(cmEditor.getLine(i));
-            }
-
-            for (var pos in lines) {
-                var line = lines[pos];
-
-                //TODO Relict?
-                var tempComponent = null;
-
-                //#################
-                // Component Check
-                //#################
-                //.type found. Assuming, every initial component line
-                //is declaring the component with .type
-                //Trying to find a corresponding component.
-                if (line.indexOf(".type") != -1) {
-                    //extract variable name
-                    var prefix = line.substring(0, line.indexOf(".type"));
-
-                    var firstQuotation = line.indexOf("\"");
-                    var secondQuotation = line.indexOf("\"", firstQuotation + 1);
-
-                    //if the type is declared, try to find a corresponding component
-                    if (firstQuotation != -1 && secondQuotation != -1) {
-                        //iterate through all components
-                        for (var posComp in allComponents) {
-                            var currentComponent = allComponents[posComp];
-                            //extract components type-declaration
-                            var compType = extractComponentType(currentComponent.componentUsage);
-                            //extract the components type, the user wrote.
-                            var usersCompType = line.substring(firstQuotation + 1, secondQuotation);
-                            //if the users component type was found
-                            if (compType == usersCompType) {
-                                //apply the variable name.
-                                currentComponent.componentVariable = prefix;
-                                tempComponent = currentComponent;
-
-                                userComponentMap[prefix] = currentComponent;
-                            }
-                        }
-
-                        if (tempComponent == null) {
-                            //$log.debug("Unable to find users component '" + (line.substring(firstQuotation + 1, secondQuotation)) + "'");
-                        } else {
-                            //$log.debug("Found users component '" + tempComponent.componentName + "' with Prefix " + prefix);
-                            //$log.debug(userComponentMap);
-                        }
-                    }
-                }
-
-                //#################
-                // Attribue Check
-                //#################
-                //iterate over the component map.
-                //where the users prefix is the key, and the component object the value.
-                for (var userPrefix in userComponentMap) {
-                    var compObject = userComponentMap[userPrefix];
-
-                    var variableName = userPrefix + ".";
-                    var variableNamePosition = line.indexOf(variableName);
-                    //if variableNamePosition is not -1, we'll add the length of variableName, so
-                    //it marks the start of attributes name.
-                    if (variableNamePosition != -1) {
-                        variableNamePosition += variableName.length;
-                    }
-
-                    //get the index of the end of attribute declaration. 
-                    //E.g ks.fileName<HERE> = "father.owl"
-                    // OR ks.fileName<HERE>="father.owl"
-                    var positionAttributeEnd = line.indexOf(" =");
-                    if (positionAttributeEnd == -1) {
-                        positionAttributeEnd = line.indexOf("=");
-                    }
-                    //storing the user typed attribute name.
-                    var attribute = null;
-                    //storing the user typed attribute value
-                    var attributeValue = null;
-
-                    //if the start and end markers for attribute name were found
-                    if (variableNamePosition != -1 && positionAttributeEnd != -1) {
-                        //save the attribute name.
-                        attribute = line.substring(variableNamePosition, positionAttributeEnd);
-                    }
-
-                    //if the attribute following the prefix is not 'type'
-                    if (attribute != null && attribute != "type") {
-
-                        //this would be just the check for String-values.
-                        //TODO: Numbers, Booleans, Arrays
-                        var firstQuotation = line.indexOf("\"");
-                        var secondQuotation = line.indexOf("\"", firstQuotation + 1);
-
-                        if (firstQuotation != -1 && secondQuotation != -1) {
-                            attributeValue = line.substring(firstQuotation + 1, secondQuotation);
-                        }
-
-                        //when no quotation marks have been found, its probably a number or boolean.
-                        if (firstQuotation == -1 && secondQuotation == -1) {
-                            //ensure, that the user can write "ks.test = abc" or
-                            //"ks.test =abc". The space between equalsign and value 
-                            //would be prettier, but it is not necessary.
-                            var positionAttributeValueStart = line.indexOf("= ");
-
-                            if (positionAttributeValueStart == -1) {
-                                positionAttributeValueStart = line.indexOf("=");
-                            } else {
-                                positionAttributeValueStart += 2;
-                            }
-
-                            if (positionAttributeValueStart == -1) {
-                                positionAttributeValueStart += 1;
-                            }
-                            //end ensurance.
-
-                            if (positionAttributeValueStart != -1) {
-                                attributeValue = line.substring(positionAttributeValueStart);
-                            }
-
-                        }
-
-                        //if an attribute value has been found, apply it.
-                        if (attributeValue != null) {
-
-                            //update components option fields
-                            //first, find the right option
-                            for (var posOpt in compObject.componentOptions) {
-
-                                if (compObject.componentOptions[posOpt].optionName == attribute) {
-                                    //when we find the right option, set the value.
-                                    compObject.componentOptions[posOpt].optionValue = attributeValue;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            //asdasd
-            var userComponents = [];
-
-            for (var pos in userComponentMap) {
-                userComponents.push(userComponentMap[pos]);
-            }
+            // Let the EditorService parse the configuration and do further handling.
+            EditorService.parseConfiguration(configuration);
 
             //selectedComponentsService.setComponents(userComponents);
         };
 
-        function extractComponentType(componentUsage) {
-            var firstQuotation = componentUsage.indexOf("\"");
-            var secondQuotation = componentUsage.indexOf("\"", firstQuotation + 1);
-
-            var typeDeclaration = componentUsage.substring(firstQuotation + 1, secondQuotation);
-
-            return typeDeclaration;
-        };
-
         var initializeCodeMirror = function() {
 
-            // get textarea for configurations
+            // get the editors default textarea which will be replaced by a CodeMirror-Instance
             var configTextarea = document.getElementById("dll-editor");
-            // CodeMirror Instance. Plain HTML-Textarea will be replaced
+
+            // Initialize CodeMirror
             cmEditor = CodeMirror(function(elt) {
                 configTextarea.parentNode.replaceChild(elt, configTextarea);
             }, {
@@ -10148,30 +10308,23 @@ app.directive("dllEditor", [function() {
                 lineNumbers: true,
                 // syntax mode: JavaScript (for now)
                 mode: 'ebnf',
-                // ScrollbarStyle (refers to script 'simplescrollbars.js' and
-                // 'simplescrollbars.css')
+                // ScrollbarStyle (refers to script 'simplescrollbars.js' and 'simplescrollbars.css')
                 scrollbarStyle: 'simple',
-                //prevent CodeMirrors default Drop-Actions
+                // prevent CodeMirrors default Drop-Actions
                 dragDrop: false,
-                //enable autocomplete.
-                //TODO wirte own hint-logic
+                // enable autocomplete.
+                // TODO wirte own hint-logic
                 //extraKeys: {"Ctrl-Space": "autocomplete"},
                 pollInterval: 1000
             });
 
-            //Handling the synchro from editor to selection 
+            //Handling the synchro from editor to toolbox, when the editor's content changes.
             cmEditor.on("change", function() {
                 onChangeCodeMirror();
             });
         };
 
-        ModulesService.getData(function(data) {
-            Components = data.components;
-            $(document).ready(function() {
-
-                initializeCodeMirror();
-            });
-        });
+        initializeCodeMirror();
     }];
 
     return {
@@ -10179,10 +10332,10 @@ app.directive("dllEditor", [function() {
         scope: {},
         templateUrl: '../../views/partials/dll-editor-template.htm',
         controller: controller
-    }
+    };
 
 }]);
-;var app = angular.module("DLLearner", ["AJAXModule", "DLLearnerModules", "DLLearnerEditor"]);
+;var app = angular.module("DLLearner", ["AJAXModule", "dllModules", "dllEditor"]);
 
 app.controller("DLLearnerCtrl", ["$rootScope", "$scope", "$log", function($rootScope, $scope, $log) {
 
@@ -10194,111 +10347,65 @@ app.controller("DLLearnerCtrl", ["$rootScope", "$scope", "$log", function($rootS
 }]);
 ;var app = angular.module("DLLearner");
 
+/**
+ * This directive handles the made component selection and supports the addition of options for each component.
+ */
 app.directive("dllToolbox", [function() {
 
     var controller = ["$scope", "$log", "UserComponentsService", function($scope, $log, UCS) {
 
-        //Array of components the user selcted
-        $scope.selectedComponents = UCS.getSelectedComponents();
+        /*
+            This array holds the current selection of components.
+         */
+        $scope.selectedComponents = [];
 
-        $scope.addOption = function(option, value) {
+        /**
+         * When the user selects a component from the module selection,
+         * the UserComponentService (UCS) gets notified. The UCS therefor 
+         * notifies the dllToolbox controller, that there exists a new component
+         * in the user's selection.
+         */
+        UCS.onNewComponent(function(component) {
 
-            if (!option) return;
+            $scope.selectedComponents.push(component);
+        });
 
-            if (!value) {
-                if (option.optionDefaultValue) option.optionValue = option.optionDefaultValue;
-                else return;
-            } else {
-                option.optionValue = value;
-            }
-        };
+        /**
+         * When the user wants to load an example, multiple components
+         * are part of it. Instead of notifiying this controller n times for n components
+         * in the example, this controller has a callback for a complete new selection of
+         * components.
+         * 
+         * @param  {Array}  components  A list of component objects. 
+         */
+        UCS.onNewComponents(function(components) {
 
-        $scope.getOptions = function(component) {
+            $scope.selectedComponents = components;
+        });
 
-            var out = [];
-            for (var pos in component.componentOptions) {
-                var cur = component.componentOptions[pos];
 
-                if (cur.optionValue !== undefined) out.push(cur);
-            }
+        /**
+         * Function for removal of a component.
+         * Gets called when the user clicks on 'remove component'.
+         * 
+         * @param  {object} component A component repeated by ng-repeat.
+         * @param  {number} index     The index of this component.
+         */
+        $scope.removeComponent = function(component, index) {
 
-            return out;
+            $scope.selectedComponents.splice(index, 1);
+            UCS.removeComponent(component);
         };
 
         /**
-         * Function returns the components config-file usage, as documented in the documentation.
-         * Without the default prefix.
+         * Function for addition of an option value / parameter.
+         * Gets called when the user clicks on 'add option'.    
+         * @param {Object}                  option      Option-Object from ng-options (<select>)
+         * @param {string|number|boolean}   optionValue Value the option should have. 
          */
-        var extractComponentUsage = function(component) {
-            var componentUsage = component.componentUsage;
+        $scope.addOption = function(option, optionValue) {
 
-            return componentUsage.substring(componentUsage.indexOf("."));
         };
-
-        /**
-         * Function returns the default variable for a component (e.g. ks)
-         */
-        var extractComponentDefaultVariable = function(component) {
-            var prefix = component.componentUsage.substring(0, component.componentUsage.indexOf("."));
-            return prefix;
-        };
-
-        $scope.insertSelectionIntoEditor = function() {
-
-            //get CodeMirror instance
-            var confEditor = $('.CodeMirror')[0].CodeMirror;
-            var content = "";
-
-            //Counting the numbers of lines, that will be added.
-            //Important for snychro editor->toolbox
-            var lineCount = 0;
-
-            for (var pos in $scope.selectedComponents) {
-                //current component
-                var component = $scope.selectedComponents[pos];
-
-                //apply the components variable name. If no one was set yet, get the default ones.
-                var componentVariable = component.componentVariable;
-                if (typeof(componentVariable) === 'undefined' || componentVariable == '') {
-                    componentVariable = extractComponentDefaultVariable(component);
-                }
-
-                //add the componentVariable and the component usage to the editor
-                content += componentVariable + extractComponentUsage(component) + "\n";
-                component.lineOccurrence = lineCount;
-                lineCount++;
-
-
-                //selected options of this component
-                var selectedOptions = $scope.getOptions(component);
-
-                for (var posOpt in selectedOptions) {
-                    var option = selectedOptions[posOpt];
-
-                    if (option.optionUsage.indexOf("\"") != -1) {
-                        content += componentVariable + "." + option.optionName + " = \"" + option.optionValue + "\"\n";
-                    } else {
-                        content += componentVariable + "." + option.optionName + " = " + option.optionValue + "\n";
-                    }
-                    option.lineOccurrence = lineCount;
-                    lineCount++;
-                }
-
-                content += "\n\n";
-                lineCount += 2;
-            }
-            //apply the calculated content to the editor
-            confEditor.setValue(content);
-        };
-
-        $scope.$watch('selectedComponents', function() {
-
-            if ($('.CodeMirror')[0] && !$('.CodeMirror')[0].CodeMirror.hasFocus()) {
-
-                //in case selectedComponents were changed from toolbox, update editor.
-                $scope.insertSelectionIntoEditor();
-            }
-        }, true);
     }];
 
     return {

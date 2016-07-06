@@ -1,6 +1,9 @@
 package org.watte;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.StringReader;
 import java.util.ArrayList;
 
@@ -30,6 +33,21 @@ public class ModuleHandler {
 	public ModuleHandler() {
 		logger.debug("Constructor MOduleHandler");
 		DocumentationGenerator docGenerator = new DocumentationGenerator();
+
+        // FileWriter fw;
+        // BufferedWriter bw;
+        // File file = new File("dlldoc.txt");
+        // try {
+        //     // write config content into confFile
+        //     fw = new FileWriter(file);
+        //     bw = new BufferedWriter(fw);
+
+        //     bw.write(docGenerator.getConfigDocumentationString());
+        //     bw.close();
+            
+        // } catch (Exception e) {
+        //     logger.error("Unable to write doc to file.");
+        // }
 
 		modules = parseDocumentation(docGenerator.getConfigDocumentationString());
 
