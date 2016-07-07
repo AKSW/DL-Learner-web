@@ -31,7 +31,7 @@
                 <th>Option Value</th>
                 <th></th>
             </tr>
-            <tr ng-repeat="option in getOptions(component)">
+            <tr ng-repeat="option in component.componentOptions | compOptionFilter">
                 <td>{{option.optionName}}</td>
                 <td>{{option.optionDescription}}</td>
                 <td>{{option.optionValue}}</td>
@@ -40,3 +40,4 @@
         </table>
     </div>
 </div>
+woopi

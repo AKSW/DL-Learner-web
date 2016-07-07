@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         "scripts/lib/DLLearnerModules/DLLearnerModules.js",
         "scripts/lib/Editor/DLLearnerEditor.js",
         "scripts/lib/DLLearner.js",
-        "scripts/lib/Toolbox.js",
+        "scripts/lib/Toolbox/DLLearnerToolbox.js",
     ];
     var dllearnerDest = "./build/" + concatName;
 

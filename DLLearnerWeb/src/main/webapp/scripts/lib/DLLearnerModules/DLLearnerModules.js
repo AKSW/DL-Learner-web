@@ -22,7 +22,10 @@ app.service("ModulesService", ["$log", "AJAXService", function($log, AJAXService
      */
     var callbackQueue = [];
 
-
+    /**
+     * This function will executed every saved callback function,
+     * with the avaiable Modules and Components as parameter.
+     */
     var processQueue = function() {
         for (var pos in callbackQueue) {
             callbackQueue[pos]({
@@ -32,13 +35,40 @@ app.service("ModulesService", ["$log", "AJAXService", function($log, AJAXService
         }
     };
 
+
+    /**
+     * This function will return the default variable name for a given component.
+     * 
+     * @param  {Object} component   A component object.
+     * 
+     * @return {String}             The default variable name for the component
+     */
+    var getComponentsDefaultVariable = function(component) {
+        var usage = component.componentUsage;
+        var variable = usage.substring(0, usage.indexOf("."));
+        return variable;
+    };
+
+
+    // Deprecated once the backend parsing is better
+    var getComponentsShortName = function(component) {
+        var componentUsage = component.componentUsage;
+        var firstQuotation = componentUsage.indexOf("\"");
+        var secondQuotation = componentUsage.indexOf("\"", firstQuotation + 1);
+
+        var typeDeclaration = componentUsage.substring(firstQuotation + 1, secondQuotation);
+
+        return typeDeclaration;
+    };
+
+
     /*
         Execute an AJAX to retrieve the avaiable modules.
         Here each module and each component will get an ID.
      */
     AJAXService.performAjax("/modules", "GET", "", function(response) {
 
-        //ids for modules and components.
+        // IDs for modules and components.
         var moduleID = 1;
         var componentID = 1;
 
@@ -50,6 +80,9 @@ app.service("ModulesService", ["$log", "AJAXService", function($log, AJAXService
                 var curComp = curModule.moduleComponents[comp];
                 curComp.id = componentID;
                 curComp.moduleID = moduleID;
+                curComp.componentVariable = getComponentsDefaultVariable(curComp);
+                // TODO: This should not be necessary when the backend parsing is more advanced. 
+                curComp.shortName = getComponentsShortName(curComp);
 
                 Components.push(curModule.moduleComponents[comp]);
                 componentID++;
@@ -122,9 +155,16 @@ app.service("UserComponentsService", ["$log", function($log) {
         }
     };
 
+    var notifyNewComponentsSubscribers = function() {
+        for (var pos in onNewComponentsSubscribers) {
+            onNewComponentsSubscribers[pos](selectedComponents);
+        }
+    };
+
     return {
         /**
          * Subscriber function for callbacks on new component added.
+         * 
          * @param  {Function} callback Function to be executed when a new component was added.
          */
         onNewComponent: function(callback) {
@@ -133,6 +173,7 @@ app.service("UserComponentsService", ["$log", function($log) {
         },
         /**
          * Subscriber function for callbacks on whole new component selection.
+         * 
          * @param  {Function} callback Function to be executed when a whole new component selection was made.
          */
         onNewComponents: function(callback) {
@@ -142,6 +183,7 @@ app.service("UserComponentsService", ["$log", function($log) {
         /**
          * This function gets called, when the user clicks on a component in Module-View.
          * All subscribers for new-component-event will be notified.
+         * 
          * @param {Object} component A component object
          */
         addComponent: function(component) {
@@ -150,6 +192,7 @@ app.service("UserComponentsService", ["$log", function($log) {
         },
         /**
          * This function gets called, when the user removes a component from the toolbox.
+         * 
          * @param  {Object} component A component object
          */
         removeComponent: function(component) {
@@ -158,6 +201,27 @@ app.service("UserComponentsService", ["$log", function($log) {
                 if (selectedComponents[pos].id == component.id) componentIndex = pos;
             }
             if (componentIndex) selectedComponents.splice(componentIndex, 1);
+        },
+        /**
+         * This function will overwrite the current selected components with 
+         * another list of components. Subscribers for "NewComponents" will be notified.
+         * 
+         * @param {Array} components    A list of component objects.
+         */
+        setComponents: function(components) {
+            $log.debug(JSON.stringify(components));
+            $log.debug(JSON.stringify(selectedComponents));
+            // When the list of components has not changed, dont start the callback chain.
+            // DLLearnerEditor parses a configuration, notifies UCS about the new components,
+            // UCS notifies DLLearnerEditor about new components, DLLearnerEditor parses new components,
+            // DLLearnerEditor changes CodeMirror-Content, DLLearner gets triggered and parses the configuration.
+            if (JSON.stringify(components) === JSON.stringify(selectedComponents)) {
+                $log.debug("UCS wont notify newComponents subscribers, because there is no real change");
+                return;
+            }
+
+            selectedComponents = components;
+            notifyNewComponentsSubscribers();
         }
     };
 }]);

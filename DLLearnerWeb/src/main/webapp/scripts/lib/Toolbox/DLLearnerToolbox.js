@@ -1,4 +1,4 @@
-var app = angular.module("DLLearner");
+var app = angular.module("dllToolbox", ["dllModules"]);
 
 /**
  * This directive handles the made component selection and supports the addition of options for each component.
@@ -33,6 +33,8 @@ app.directive("dllToolbox", [function() {
          */
         UCS.onNewComponents(function(components) {
 
+            $log.debug("Toolbox setting components:");
+            $log.debug(components);
             $scope.selectedComponents = components;
         });
 
@@ -52,11 +54,21 @@ app.directive("dllToolbox", [function() {
 
         /**
          * Function for addition of an option value / parameter.
-         * Gets called when the user clicks on 'add option'.    
+         * Gets called when the user clicks on 'add option'.   
+         *  
          * @param {Object}                  option      Option-Object from ng-options (<select>)
          * @param {string|number|boolean}   optionValue Value the option should have. 
          */
         $scope.addOption = function(option, optionValue) {
+
+            // If the user entered an optionValue, we'll apply it.
+            if (optionValue) {
+                option.optionValue = optionValue;
+            } else if (option.optionDefaultValue) {
+                // If the user has not entered an optionValue, we try to use the default value instead.
+                // But if the defaultValue is not set either, the option will not be added.
+                option.optionValue = option.optionDefaultValue;
+            }
 
         };
     }];
@@ -64,8 +76,22 @@ app.directive("dllToolbox", [function() {
     return {
         restrict: 'E',
         scope: {},
-        templateUrl: '../../views/partials/dll-components-template.htm',
+        templateUrl: '../../scripts/lib/Toolbox/dll-components-template.htm',
         controller: controller
-    }
+    };
+
+}]);
+
+app.filter("compOptionFilter", [function() {
+
+    return function(input) {
+
+        var out = [];
+        for (var pos in input) {
+            if (input[pos].optionValue) out.push(input[pos]);
+        }
+
+        return out;
+    };
 
 }]);
