@@ -33,11 +33,13 @@ app.service("EditorService", ["$timeout", "$log", "ModulesService", "UserCompone
 
     /**
      * Function tries to find a component object by a declared .type value.
-     * E.g. ks.type = "KB File" will find the component with name "KB File"
+     * E.g. ks.type = "kbfile" will find the component with name "KB File"
      * @param  {String} line        A line of the configuration
      * @return {Object|false}       A component object or false, if no component with this type as name is found.
      */
-    var getComponentByType = function(line) {
+    var getComponentByType = function(argLine) {
+        var line = argLine.toLowerCase();
+
         // Create a copy of the components-list.
         var allComponents = angular.copy(Components);
 
@@ -48,15 +50,15 @@ app.service("EditorService", ["$timeout", "$log", "ModulesService", "UserCompone
         // If the component type is declared, try to find a corresponding component
         if (firstQuotation != -1 && secondQuotation != -1) {
 
+            // extract the components type, the user wrote.
+            var usersCompType = line.substring(firstQuotation + 1, secondQuotation);
+
             // Iterate through all components
             for (var posComp in allComponents) {
                 var currentComponent = allComponents[posComp];
 
-                // extract the components type, the user wrote.
-                var usersCompType = line.substring(firstQuotation + 1, secondQuotation);
-
                 // If the users component type was found, return the found component object.
-                if (currentComponent.shortName == usersCompType) return currentComponent;
+                if (currentComponent.shortName.toLowerCase() == usersCompType.toLowerCase()) return currentComponent;
             }
         }
 
@@ -233,7 +235,7 @@ app.service("EditorService", ["$timeout", "$log", "ModulesService", "UserCompone
             var curComp = selectedComponents[compIdx];
 
             // Add a comment above each component area with the name of the component.
-            content += "//" + curComp.componentName;
+            content += "//" + curComp.componentName + "\n";
 
             // Start with component declaration. componentVariable can be the default or 
             // an user selected value
@@ -265,7 +267,12 @@ app.service("EditorService", ["$timeout", "$log", "ModulesService", "UserCompone
     });
 
     UCS.onNewComponents(function(newComponents) {
-        if (JSON.stringify(newComponents) === JSON.stringify(selectedComponents)) return;
+        if (JSON.stringify(newComponents) === JSON.stringify(selectedComponents)) {
+            $log.warn("DLLearnerEditor onNewComponents: Wont cascade due to object equality");
+            $log.warn(newComponents);
+            $log.warn(selectedComponents);
+            return;
+        }
 
         var content = createConfiguration(newComponents);
         notifySubscribers(content);

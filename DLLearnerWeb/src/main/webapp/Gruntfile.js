@@ -13,6 +13,7 @@ module.exports = function(grunt) {
         "scripts/lib/CodeMirror/addon/scroll/simplescrollbars.js",
         "scripts/lib/CodeMirror/mode/xml/xml.js",
         "scripts/lib/CodeMirror/mode/ebnf/ebnf.js",
+        "scripts/lib/CodeMirror/mode/javascript/javascript.js",
         "scripts/angular/angular.min.js",
         "scripts/lib/AJAXModule.js",
         "scripts/lib/DLLearnerModules/DLLearnerModules.js",

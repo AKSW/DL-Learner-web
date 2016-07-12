@@ -61,15 +61,20 @@ app.directive("dllToolbox", [function() {
          */
         $scope.addOption = function(option, optionValue) {
 
-            // If the user entered an optionValue, we'll apply it.
-            if (optionValue) {
-                option.optionValue = optionValue;
-            } else if (option.optionDefaultValue) {
-                // If the user has not entered an optionValue, we try to use the default value instead.
-                // But if the defaultValue is not set either, the option will not be added.
-                option.optionValue = option.optionDefaultValue;
-            }
+            // Dont add the option if the optionValue as well as the defaultValue is not set.
+            if (!optionValue && !option.optionDefaultValue) return;
 
+            // Set either the user entered optionValue or the defaultValue as optionValue.
+            option.optionValue = optionValue || option.optionDefaultValue;
+
+            UCS.setComponents($scope.selectedComponents);
+        };
+
+        $scope.removeOption = function(option) {
+
+            option.optionValue = undefined;
+
+            UCS.setComponents($scope.selectedComponents);
         };
     }];
 

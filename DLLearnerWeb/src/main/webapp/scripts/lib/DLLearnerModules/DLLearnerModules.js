@@ -157,7 +157,7 @@ app.service("UserComponentsService", ["$log", function($log) {
 
     var notifyNewComponentsSubscribers = function() {
         for (var pos in onNewComponentsSubscribers) {
-            onNewComponentsSubscribers[pos](selectedComponents);
+            onNewComponentsSubscribers[pos](angular.copy(selectedComponents));
         }
     };
 
